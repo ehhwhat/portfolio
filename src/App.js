@@ -16,7 +16,7 @@ function App() {
                     <TextImage
                         backgroundImage={ImgMeHappy}
                         heading={'Whats this all about?'}
-                        subHeading={'Well it\'s somewhere to showcase my actual development work, github actions test'}
+                        subHeading={'Well it\'s somewhere to showcase my actual development work'}
                         id={'introduction'}
                         content={<p>What better way to show my skills and knowledge than to build some completely random apps and code demo's using them. You will hopefully be able to browse around generic content pages, JS demo's and some React apps.</p>}
                     />
