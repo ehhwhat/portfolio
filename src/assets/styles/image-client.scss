@@ -1,0 +1,34 @@
+// Image client
+.image-client {
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size: cover;
+	position: relative;
+	&:hover {
+		i {
+			opacity: 0;transition: all 0.25s;
+		}
+		div {
+			opacity: 0;transition: all 0.25s;
+		}
+	}
+	i {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform:translateX(-50%) translateY(-50%);
+		color:#f93154;
+		font-size: 5rem;
+		z-index:2;
+		transition: all 0.125s;
+	}
+	div {
+		opacity:0.33;
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		transition: all 0.25s;
+	}
+}

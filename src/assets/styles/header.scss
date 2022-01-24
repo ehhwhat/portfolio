@@ -1,0 +1,10 @@
+header .navbar{
+	&.navbar-light {
+		a.nav-link {
+			color:#4f4f4f;
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+}

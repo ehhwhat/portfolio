@@ -2,11 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AppStyletile from './AppStyletile';
+import AppComponents from './AppComponents';
+import AppCV from './AppCV';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Router>
+          <ScrollToTop />
+          <Header />
+          <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/AppStyletile" element={<AppStyletile />} />
+              <Route path="/AppComponents" element={<AppComponents />} />
+              <Route path="/AppCV" element={<AppCV />} />
+          </Routes>
+          <Footer />
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

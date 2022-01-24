@@ -1,0 +1,104 @@
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  margin-left:-2px;
+}
+
+.vh-min-50 {
+  min-height:50vh!important;
+}
+
+.p-bespoke {
+  padding:3rem!important;
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    padding:3rem!important;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    padding:3rem!important;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    padding:4rem!important;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    padding:5rem!important;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    padding:6rem!important;
+  }
+}
+
+.font-silly {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.bookColSmall .net-bux {
+  height:40vh;
+}
+
+.bookColMedium .net-bux {
+  height:40vh;
+}
+
+.bookColLarge .net-bux {
+  height:40vh;
+}
+
+.card.net-bux {
+  overflow: hidden;
+  //height:45vh;
+  &.not-read {
+    opacity:50%;
+    img {
+      filter: brightness(50%) blur(0px) grayscale(100%);
+    }
+  }
+  img {
+    filter: brightness(66%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.25s;
+  }
+  .card-img-overlay {
+    top:auto!important;
+  }
+  .extra-details {
+    max-height:0;
+    overflow: hidden;
+    transition: all 1s;
+  }
+  &:hover {
+    img {
+      filter: brightness(100%);
+      width: 110%;
+      transition: all 0.5s;
+    }
+    .extra-details {
+      max-height:300px;
+      transition: all 2s;
+    }
+  }
+  &--large {
+    height:66vh;
+  }
+}
+
+.bookCol {
+  transition: all 0.25s;
+}
+
+body .bg-light {
+  background-color: #eee!important;
+}
+
+body .bg-danger--dark {
+  background-color: #880E4F!important;
+}
