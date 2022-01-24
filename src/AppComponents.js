@@ -9,7 +9,6 @@ import TechStack from "./components/TechStack";
 import TextBlock from "./components/TextBlock";
 import Education from "./components/Education";
 import Experience2 from "./components/Experience2";
-import ImgEngineLogo from "./assets/img/clients/engine/logo.jpg";
 
 function AppComponents() {
     let DataEducations = [

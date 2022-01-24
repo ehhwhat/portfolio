@@ -27,10 +27,10 @@ function AppStyletile() {
                             <HeadingSection heading={'Typography'} />
                             <p><strong>Normal</strong></p>
                             <p>A B C D E F G H I K L M N O P Q R S T V X Y Z</p>
-                            <p>It was a <strong>bright</strong> <a href="">cold day in April</a>, and
+                            <p>It was a <strong>bright</strong> <a href="#testing">cold day in April</a>, and
                                 the <em>clocks</em> were <u>striking</u> thirteen. Winston Smith, his chin nuzzled into
                                 his breast in an effort to escape the vile wind, slipped quickly through the glass doors
-                                of <a href="">Victory Mansions</a>, though not quickly enough to <u>prevent</u> a swirl
+                                of <a href="#testing">Victory Mansions</a>, though not quickly enough to <u>prevent</u> a swirl
                                 of gritty dust <em>from entering along</em> with him.</p>
 
                             <p><strong>Lead</strong></p>
