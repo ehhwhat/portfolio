@@ -13,7 +13,7 @@ class Experience2 extends Component {
             </div>
         );
         return (
-            <section className="row section-row justify-content-start">
+            <section className="row section-row justify-content-start g-0">
                 <TextBlock heading={this.props.heading} bgColour={this.props.bgColour} textColour={this.props.textColour} />
                 {dataList}
             </section>

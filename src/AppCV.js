@@ -120,7 +120,7 @@ function AppCV() {
                         </table>
                     </TextImage>
 
-                    <section className="row section-row " id="">
+                    <section className="row section-row g-0" id="">
                         <TextBlock heading={'Education'}>
                             <Education data={DataEducations} />
                         </TextBlock>

@@ -11,6 +11,8 @@ import imgFirebase from '../assets/img/tech/firebase3.svg'
 import imgReact from '../assets/img/tech/react2.svg'
 import imgGit from '../assets/img/tech/git.svg'
 import imgGitHub from '../assets/img/tech/github.svg'
+import imgDocker from '../assets/img/tech/docker.svg'
+import imgDrupal from '../assets/img/tech/drupal.svg'
 
 class TechStack extends Component {
     render() {
@@ -30,37 +32,37 @@ class TechStack extends Component {
                             <span className="lead">Javascript</span>
                             <img alt="Javascript" title="Javascript" src={imgJS} />
                         </li>
-                        {this.props.templating ? (
+                        {this.props.handlebars ? (
                             <li className="list-inline-item">
                                 <span className="lead">Handlebars</span>
                                 <img alt="Handlebars" title="Handlebars" src={imgHandlebars} />
                             </li>
                         ) : ''}
-                        {this.props.frameworks ? (
+                        {this.props.foundation ? (
                             <li className="list-inline-item">
                                 <span className="lead">Foundation</span>
                                 <img alt="Foundation" title="Foundation" src={imgFoundation} />
                             </li>
                         ) : ''}
-                        {this.props.frameworks ? (
+                        {this.props.bootstrap ? (
                             <li className="list-inline-item">
                                 <span className="lead">Bootstrap</span>
                                 <img alt="Bootstrap" title="Bootstrap" src={imgBootstrap} />
                             </li>
                         ) : ''}
-                        {this.props.automation ? (
+                        {this.props.grunt ? (
                             <li className="list-inline-item">
                                 <span className="lead">Grunt</span>
                                 <img alt="Grunt" title="Grunt" src={imgGrunt} />
                             </li>
                         ) : ''}
-                        {this.props.automation ? (
+                        {this.props.gulp ? (
                             <li className="list-inline-item">
                                 <span className="lead">Gulp</span>
                                 <img alt="Gulp" title="Gulp" src={imgGulp} />
                             </li>
                         ) : ''}
-                        {this.props.database ? (
+                        {this.props.firebase ? (
                             <li className="list-inline-item">
                                 <span className="lead">Firebase</span>
                                 <img alt="Firebase" title="Firebase" src={imgFirebase} />
@@ -72,13 +74,25 @@ class TechStack extends Component {
                                 <img alt="React" title="React" src={imgReact} />
                             </li>
                         ) : ''}
-                        {this.props.control ? (
+                        {this.props.docker ? (
+                            <li className="list-inline-item">
+                                <span className="lead">Docker</span>
+                                <img alt="Docker" title="Docker" src={imgDocker} />
+                            </li>
+                        ) : ''}
+                        {this.props.drupal ? (
+                            <li className="list-inline-item">
+                                <span className="lead">Drupal</span>
+                                <img alt="Drupal" title="Drupal" src={imgDrupal} />
+                            </li>
+                        ) : ''}
+                        {this.props.git ? (
                             <li className="list-inline-item">
                                 <span className="lead">Git</span>
                                 <img alt="Git" title="Git" src={imgGit} />
                             </li>
                         ) : ''}
-                        {this.props.control ? (
+                        {this.props.github ? (
                             <li className="list-inline-item">
                                 <span className="lead">GitHub</span>
                                 <img alt="GitHub" title="GitHub" src={imgGitHub} />
