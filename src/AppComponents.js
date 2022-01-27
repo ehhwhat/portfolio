@@ -103,14 +103,26 @@ function AppComponents() {
                     <section className="row section-row justify-content-center">
                         <div className="col-sm-12" id="">
                             <HeadingSection heading={'Tech Stack'} />
-                            <p>All (templating, frameworks, automation, database, react and source control)</p>
-                            <TechStack templating={true} frameworks={true} automation={true} database={true} react={true} control={true} />
+                            <p>All (Handlebars, Foundation, Bootstrap, Grunt, Gulp, Firebase, React, Docker, Drupal, Git and GitHub)</p>
+                            <TechStack
+                                handlebars={true}
+                                foundation={true}
+                                bootstrap={true}
+                                grunt={true}
+                                gulp={true}
+                                firebase={true}
+                                react={true}
+                                docker={true}
+                                drupal={true}
+                                git={true}
+                                github={true}
+                            />
                             <p>Filtered</p>
                             <TechStack />
                         </div>
                     </section>
 
-                    <section className="row section-row " id="">
+                    <section className="row section-row g-0" id="">
                         <HeadingSection heading={'Text Block'} />
                         <TextBlock
                             heading={'Heading'}

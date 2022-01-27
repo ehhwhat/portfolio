@@ -66,10 +66,14 @@ function App() {
                         id={'case'}
                         content={<div><p>An in depth look at some recent work</p>
                             <ul className="">
-                                <li><strike href="case-studies/engine.html">Engine UK</strike></li>
-                                <li><strike href="case-studies/versantus.html">Versantus</strike></li>
-                                <li><strike href="case-studies/icaew2.html">ICAEW 2</strike></li>
-                                <li><strike href="case-studies/merchantCantos.html">MerchantCantos</strike></li>
+                                <li><NavLink to="/AppCaseEngine">Engine UK</NavLink></li>
+                                <li><NavLink to="/AppCaseVersantus">Versantus</NavLink></li>
+                                <li><NavLink to="/AppCaseICAEW2">ICAEW 2</NavLink></li>
+                                <li><NavLink to="/AppCaseMerchantCantos">MerchantCantos</NavLink></li>
+                                <li><NavLink to="/AppCaseICAEW1">ICAEW</NavLink></li>
+                                {/*<li><NavLink to="/AppCaseCashplus">Cashplus</NavLink></li>*/}
+                                {/*<li><NavLink to="/AppCaseHomeserveUSA">Homeserve USA</NavLink></li>*/}
+                                {/*<li><NavLink to="/AppCaseHomeserve">Homeserve</NavLink></li>*/}
                             </ul></div>}
                     />
                 </div>

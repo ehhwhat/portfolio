@@ -9,7 +9,7 @@ class TextImage extends Component {
             backgroundImage: `url(${this.props.backgroundImage})`
         };
         return (
-            <section className="row section-row " id="">
+            <section className="row section-row text-image g-0" id="">
                 <div className={`col-12 col-sm-6 bg-white p-bespoke d-flex align-items-center vh-min-50 ${this.props.altLayout ? 'order-2' : 'order-1'}`}>
                     <div className="heading-subheading-intro" id="">
                         <h2 className="display-5" id={this.props.id}>{this.props.heading}</h2>
@@ -19,9 +19,10 @@ class TextImage extends Component {
                     </div>
                 </div>
                 <div
-                    className={`col-12 col-sm-6 bg-light p-bespoke d-flex align-items-center vh-min-50 ${this.props.altLayout ? 'order-1' : 'order-2'}`}
+                    className={`text-image__image col-12 col-sm-6 bg-light p-bespoke d-flex align-items-center vh-min-50 ${this.props.altLayout ? 'order-1' : 'order-2'} `}
                     style={backgroundImage}
                 >
+                    {this.props.overlay ? <div className={'overlay'}></div> : '' }
                 </div>
             </section>
         );

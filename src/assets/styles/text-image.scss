@@ -1,0 +1,35 @@
+// blank
+.text-image{
+  &__image {
+    position: relative;
+  }
+  .overlay {
+    background:black;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0.25;
+    transition: all 0.125s;
+    &:hover {
+      opacity: 0;
+      transition: all 0.25s;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
