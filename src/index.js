@@ -13,6 +13,7 @@ import AppCaseICAEW1 from './AppCaseICAEW1';
 import AppCaseCashplus from './AppCaseCashplus';
 import AppCaseHomeserveUSA from './AppCaseHomeserveUSA';
 import AppCaseHomeserve from './AppCaseHomeserve';
+import AppNetBux from './AppNetBux';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
@@ -37,6 +38,7 @@ ReactDOM.render(
               <Route path="/AppCaseCashplus" element={<AppCaseCashplus />} />
               <Route path="/AppCaseHomeserveUSA" element={<AppCaseHomeserveUSA />} />
               <Route path="/AppCaseHomeserve" element={<AppCaseHomeserve />} />
+              <Route path="/AppNetBux" element={<AppNetBux />} />
           </Routes>
           <Footer />
       </Router>

@@ -49,11 +49,8 @@ function App() {
                         content={<div><p>Code I consider to be a standalone application or site.</p>
                             <p>Description</p>
                             <ul className="">
-                                <li className="">
-                                    <NavLink to="/AppCV">
-                                        CV
-                                    </NavLink>
-                                </li>
+                                <li className=""><NavLink to="/AppCV">CV</NavLink></li>
+                                <li className=""><NavLink to="/AppNetBux">NetBux</NavLink></li>
                                 <li className=""><strike>Books</strike></li>
                                 <li className=""><strike>Racing</strike></li>
                             </ul></div>}
