@@ -2,28 +2,31 @@ import React, { Component } from 'react';
 
 class Books extends Component {
     render() {
-        console.log(this.props.size);
-        console.log(this.props.data.length)
 
-        let numberOfBooks = this.props.data.length;
+        let data = this.props.data;
+        let numberOfBooks = data.length;
 
         let cardSize = '';
         if(this.props.size === 'large') {
-            console.log('make cards big');
-            cardSize = 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ';
+            cardSize = 'col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 ';
         } else if (this.props.size === 'medium') {
-            console.log('make cards medium');
-            cardSize = 'col-12 col-sm-6 col-md-3 col-lg-2 col-xl-2';
+            cardSize = 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2';
         } else {
-            console.log('make cards small');
-            cardSize = 'col-12 col-sm-4 col-md-3 col-lg-1 col-xl-1';
+            cardSize = 'col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1';
         }
 
-        let dataList = this.props.data.map((book, i) =>
+        let orderedTitleAlphaAZ = data.sort(function(a,b) {
+            let textA = a.Title.toUpperCase();
+            let textB = b.Title.toUpperCase();
+            return textA.localeCompare(textB);
+        })
+
+        let dataList = orderedTitleAlphaAZ.map((book, i) =>
             <div className={cardSize} id={'book'+i} key={'book'+i}>
-                <div className="book card vh-min-50 rounded-0" id="" style={{
+                <div className="book card rounded-0" id="" style={{
                     backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
                     backgroundImage:`url(${book.Cover})`
                 }}>
                     <div className="card-body p-4 d-flex align-items-end">
@@ -47,8 +50,15 @@ class Books extends Component {
 
         return (
             <section className="row section-row justify-content-start g-0 books">
-                <h1 className={'display-6 text-center'}>{numberOfBooks}</h1>
+
                 {dataList}
+                <div className={cardSize} key={'total'}>
+                    <div className="book card rounded-0">
+                        <div className="card-body p-4 d-flex align-items-end">
+                            <h1 className={'display-6 text-white'}>{numberOfBooks}</h1>
+                        </div>
+                    </div>
+                </div>
             </section>
         );
     }

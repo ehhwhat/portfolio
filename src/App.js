@@ -28,16 +28,8 @@ function App() {
                         id={'generic'}
                         content={<div><p>This section will cover things like the branding, and markup templating.</p>
                             <ul className="">
-                            <li className="">
-                                <NavLink to="/AppStyletile">
-                                    Styletile
-                                </NavLink>
-                            </li>
-                            <li className="">
-                                <NavLink to="/AppComponents">
-                                    Components
-                                </NavLink>
-                            </li>
+                            <li className=""><NavLink to="/AppStyletile">Styletile</NavLink></li>
+                            <li className=""><NavLink to="/AppComponents">Components</NavLink></li>
                             <li className=""><strike>Example app/demo page</strike></li>
                             </ul></div>}
                     />
@@ -49,6 +41,7 @@ function App() {
                         content={<div><p>Code I consider to be a standalone application or site.</p>
                             <p>Description</p>
                             <ul className="">
+                                <li className=""><NavLink to="/AppApps">Apps</NavLink></li>
                                 <li className=""><NavLink to="/AppCV">CV</NavLink></li>
                                 <li className=""><NavLink to="/AppNetBux">NetBux</NavLink></li>
                                 <li className=""><strike>Books</strike></li>

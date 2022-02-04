@@ -10,11 +10,8 @@ import TextBlock from "./components/TextBlock";
 import Education from "./components/Education";
 import Experience2 from "./components/Experience2";
 import Books from "./components/Book";
-import DataBooksFolio from './assets/data/DataBooksFolio'
-import Androids from "./assets/img/bookCovers/folio/androids.jpg";
-import TheIllustratedMan from "./assets/img/bookCovers/folio/the_illustrated_man.jpg";
-import Road from "./assets/img/bookCovers/folio/road.jpg";
-import StarshipTroopers from "./assets/img/bookCovers/folio/starship_troopers.png";
+import Androids from "./assets/img/bookCovers/folio/final/androids.jpg";
+import TheIllustratedMan from "./assets/img/bookCovers/folio/final/the_illustrated_man.jpg";
 
 function AppComponents() {
     let DataBooks = [
@@ -85,74 +82,6 @@ function AppComponents() {
             "Spoiler": "",
             "Title": "The Illustrated Man",
             "Year Published": 2002
-        },
-        {
-            "Additional Authors": "",
-            "Author": "Cormac McCarthy",
-            "Author l-f": "McCarthy, Cormac",
-            "Average Rating": 3.97,
-            "BCID": "",
-            "Binding": "Hardcover",
-            "Book Id": 6288,
-            "Bookshelves": "",
-            "Bookshelves with positions": "",
-            "Condition": "",
-            "Condition Description": "",
-            "Cover": Road,
-            "Date Added": "2017/07/02",
-            "Date Read": "2015/01/01",
-            "Exclusive Shelf": "read",
-            "ISBN": "0307265439",
-            "ISBN13": 9780307265432,
-            "My Rating": 3,
-            "My Review": "",
-            "Number of Pages": 241,
-            "Original Publication Year": 2006,
-            "Original Purchase Date": "",
-            "Original Purchase Location": "",
-            "Owned Copies": 0,
-            "Private Notes": "",
-            "Publisher": "Alfred A. Knopf",
-            "Read Count": 1,
-            "Recommended By": "",
-            "Recommended For": "",
-            "Spoiler": "",
-            "Title": "The Road",
-            "Year Published": 2006
-        },
-        {
-            "Additional Authors": "",
-            "Author": "Robert A. Heinlein",
-            "Author l-f": "Heinlein, Robert A.",
-            "Average Rating": 4,
-            "BCID": "",
-            "Binding": "Mass Market Paperback",
-            "Book Id": 17214,
-            "Bookshelves": "",
-            "Bookshelves with positions": "",
-            "Condition": "",
-            "Condition Description": "",
-            "Cover": StarshipTroopers,
-            "Date Added": "2018/11/13",
-            "Date Read": "2019/02/19",
-            "Exclusive Shelf": "read",
-            "ISBN": "0441783589",
-            "ISBN13": 9780441783588,
-            "My Rating": 3,
-            "My Review": "",
-            "Number of Pages": 263,
-            "Original Publication Year": 1959,
-            "Original Purchase Date": "",
-            "Original Purchase Location": "",
-            "Owned Copies": 0,
-            "Private Notes": "",
-            "Publisher": "Ace Book",
-            "Read Count": 1,
-            "Recommended By": "",
-            "Recommended For": "",
-            "Spoiler": "",
-            "Title": "Starship Troopers",
-            "Year Published": 1987
         }
     ];
     let DataEducations = [
@@ -310,8 +239,12 @@ function AppComponents() {
                             <HeadingSection heading={'Books / Book'} />
                         </div>
                     </section>
-                    <Books data={DataBooks} />
 
+                </div>
+                <div className={'container-fluid'}>
+                    <div className={'row'}>
+                    <Books data={DataBooks} size={'large'} />
+                    </div>
                 </div>
             </main>
         </div>
