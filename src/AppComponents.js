@@ -11,7 +11,6 @@ import TextBlock from "./components/TextBlock";
 import Education from "./components/Education";
 import Experience2 from "./components/Experience2";
 import Books from "./components/Book";
-import Androids from "./assets/img/bookCovers/folio/final/androids.jpg";
 import TheIllustratedMan from "./assets/img/bookCovers/folio/final/the_illustrated_man.jpg";
 import Races from "./components/Races";
 import ImgRunning1 from './assets/img/me/me_running.jpg';
