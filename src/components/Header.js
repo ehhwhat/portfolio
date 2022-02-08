@@ -24,7 +24,9 @@ class Header extends Component {
                                     <a className="nav-link" href="#generic">Generic</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#apps">Apps</a>
+                                    <NavLink className={'nav-link'} to="/AppApps">
+                                        Apps
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#case">Case studies</a>

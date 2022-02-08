@@ -3,42 +3,52 @@ import AnimalFarm from "../img/bookCovers/folio/animal_farm.jpg";
 import DownandOutinParisandLondon from "../img/bookCovers/folio/final/DownandOutinParisandLondon.jpg";
 import AlicesAdventuresinWonderland from "../img/bookCovers/folio/final/AlicesAdventuresinWonderland.jpg";
 import TheGreatGatsby from "../img/bookCovers/folio/final/the_great_gatsby.jpg";
-import TheLordOfTheFlies from "../img/bookCovers/folio/lord_of_the_flies.jpg";
-import TheMartianChronicles from "../img/bookCovers/folio/TheMartianChronicles.jpg";
-import Slaughterhouse_Five from "../img/bookCovers/folio/Slaughterhouse_Five.jpg";
-import TheHitchhikersGuidetotheGalaxy from "../img/bookCovers/folio/TheHitchhikersGuidetotheGalaxy.png";
-import ABriefHistoryofTime from "../img/bookCovers/folio/ABriefHistoryofTime.jpg";
-import DrJekyllandMrHyde from "../img/bookCovers/folio/DrJekyllandMrHyde.jpg";
-import IRobot from "../img/bookCovers/folio/irobot.jpg";
-import Handmaid from "../img/bookCovers/folio/handmaid.jpg";
-import Frankenstein from "../img/bookCovers/folio/Frankenstein.png";
-import TheWaroftheWorlds from "../img/bookCovers/folio/war_of_the_worlds.jpg";
-import TheCastle from "../img/bookCovers/folio/TheCastle.jpg";
-import TheLastMan from "../img/bookCovers/folio/TheLastMan.jpg";
-import RomeAHistoryinSevenSackings from "../img/bookCovers/folio/missing.jpg";
-import Book1984 from "../img/bookCovers/folio/1984.png";
+import TheLordOfTheFlies from "../img/bookCovers/folio/final/lord_of_the_flies.jpg";
+import TheMartianChronicles from "../img/bookCovers/folio/final/TheMartianChronicles.jpg";
+import Slaughterhouse_Five from "../img/bookCovers/folio/final/Slaughterhouse_Five.jpg";
+import TheHitchhikersGuidetotheGalaxy from "../img/bookCovers/folio/final/TheHitchhikersGuidetotheGalaxy.jpg";
+import ABriefHistoryofTime from "../img/bookCovers/folio/final/ABriefHistoryofTime.jpg";
+import DrJekyllandMrHyde from "../img/bookCovers/folio/final/DrJekyllandMrHyde.jpg";
+import IRobot from "../img/bookCovers/folio/final/irobot.jpg";
+import Handmaid from "../img/bookCovers/folio/final/handmaid.jpg";
+import Frankenstein from "../img/bookCovers/folio/final/Frankenstein.jpg";
+import TheWaroftheWorlds from "../img/bookCovers/folio/final/war_of_the_worlds.jpg";
+import TheCastle from "../img/bookCovers/folio/final/TheCastle.jpg";
+import TheLastMan from "../img/bookCovers/folio/final/TheLastMan.jpg";
+import Book1984 from "../img/bookCovers/folio/final/1984.jpg";
 import Androids from "../img/bookCovers/folio/final/androids.jpg";
-import TheIllustratedMan from "../img/bookCovers/folio/the_illustrated_man.jpg";
-import Ubik from "../img/bookCovers/folio/ubik.jpg";
-import Dracula from "../img/bookCovers/folio/dracula.jpg";
-import MobyDick from "../img/bookCovers/folio/moby_dick.jpg";
-import Book451 from "../img/bookCovers/folio/451.png";
-import Rubicon from "../img/bookCovers/folio/rubicon.jpg";
-import BraveNewWorld from "../img/bookCovers/folio/brave_new_world.jpg";
-import Book2001 from "../img/bookCovers/folio/2001.png";
-import CrimeAndPunishment from "../img/bookCovers/folio/crime_and_punishment.jpg";
-import TheCampaignsofAlexander from "../img/bookCovers/folio/TheCampaignsofAlexander.jpeg";
-import Meditations from "../img/bookCovers/folio/Meditations.jpg";
-import MostlyHarmless from "../img/bookCovers/folio/mostly_harmless.jpg";
-import SoLongandThanksforAlltheFish from "../img/bookCovers/folio/SoLongandThanksforAlltheFish.png";
-import CasinoRoyale from "../img/bookCovers/folio/casino_royale.png";
-import TheDrownedWorld from "../img/bookCovers/folio/TheDrownedWorld.jpg";
-import LifetheUniverseandEverything from "../img/bookCovers/folio/LifetheUniverseandEverything.png";
-import TheRestaurantattheEndoftheUniverse from "../img/bookCovers/folio/TheRestaurantattheEndoftheUniverse.png";
-import TheVoyageofArgo from "../img/bookCovers/folio/TheVoyageofArgo.jpg";
-import Mort from "../img/bookCovers/folio/mort.jpg";
-import ShackletonsBoatJourney from "../img/bookCovers/folio/ShackletonsBoatJourney.jpg";
-import TwentyThousandLeaguesundertheSeas from "../img/bookCovers/folio/TwentyThousandLeaguesundertheSeas.jpg";
+import TheIllustratedMan from "../img/bookCovers/folio/final/the_illustrated_man.jpg";
+import Ubik from "../img/bookCovers/folio/final/ubik.jpg";
+import Dracula from "../img/bookCovers/folio/final/dracula.jpg";
+import MobyDick from "../img/bookCovers/folio/final/moby_dick.jpg";
+import Book451 from "../img/bookCovers/folio/final/451.jpg";
+import Rubicon from "../img/bookCovers/folio/final/rubicon.jpg";
+import BraveNewWorld from "../img/bookCovers/folio/final/brave_new_world.jpg";
+import Book2001 from "../img/bookCovers/folio/final/2001.jpg";
+import CrimeAndPunishment from "../img/bookCovers/folio/final/crime_and_punishment.jpg";
+import TheCampaignsofAlexander from "../img/bookCovers/folio/final/TheCampaignsofAlexander.jpg";
+import Meditations from "../img/bookCovers/folio/final/Meditations.jpg";
+import MostlyHarmless from "../img/bookCovers/folio/final/mostly_harmless.jpg";
+import SoLongandThanksforAlltheFish from "../img/bookCovers/folio/final/SoLongandThanksforAlltheFish.jpg";
+import CasinoRoyale from "../img/bookCovers/folio/final/casino_royale.jpg";
+import TheDrownedWorld from "../img/bookCovers/folio/final/TheDrownedWorld.jpg";
+import LifetheUniverseandEverything from "../img/bookCovers/folio/final/LifetheUniverseandEverything.jpg";
+import TheRestaurantattheEndoftheUniverse from "../img/bookCovers/folio/final/TheRestaurantattheEndoftheUniverse.jpg";
+import TheVoyageofArgo from "../img/bookCovers/folio/final/TheVoyageofArgo.jpg";
+import Mort from "../img/bookCovers/folio/final/mort.jpg";
+import ShackletonsBoatJourney from "../img/bookCovers/folio/final/ShackletonsBoatJourney.jpg";
+import TwentyThousandLeaguesundertheSeas from "../img/bookCovers/folio/final/TwentyThousandLeaguesundertheSeas.jpg";
+import RomeAHistoryinSevenSackings from "../img/bookCovers/folio/final/RomeAHistoryinSevenSackings.jpg";
+import TreasureIsland from "../img/bookCovers/folio/final/TreasureIsland.jpg";
+import TheGreekMyths from "../img/bookCovers/folio/final/TheGreekMyths.jpg";
+import TheSurgeonofCrowthorne from "../img/bookCovers/folio/final/TheSurgeonofCrowthorne.jpg";
+import TheGreatEscape from "../img/bookCovers/folio/final/TheGreatEscape.jpg";
+import DescartesMeditations from "../img/bookCovers/folio/final/DescartesMeditations.jpg";
+import ToKillaMockingbird from "../img/bookCovers/folio/final/ToKillaMockingbird.jpg";
+import HomagetoCatalonia from "../img/bookCovers/folio/final/HomagetoCatalonia.jpg";
+import NeverLetMeGo from "../img/bookCovers/folio/final/NeverLetMeGo.jpg";
+import GulliversTravels from "../img/bookCovers/folio/final/GulliversTravels.jpg";
+import TheHobbit from "../img/bookCovers/folio/final/TheHobbit.jpg";
 
 
 const DataBooksFolio = [
@@ -1454,6 +1464,361 @@ const DataBooksFolio = [
     "Date Read": "",
     "Date Added": "2022/02/03",
     "Cover": TwentyThousandLeaguesundertheSeas,
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+
+
+
+
+
+  /* TreasureIsland */
+  {
+    "Book Id": 295,
+    "Cover": TreasureIsland,
+    "Title": "Treasure Island",
+    "Author": "Robert Louis Stevenson",
+    "Author l-f": "Stevenson, Robert Louis",
+    "Additional Authors": "",
+    "ISBN": "0753453800",
+    "ISBN13": 9780753453803,
+    "My Rating": 3,
+    "Average Rating": 3.84,
+    "Publisher": "Kingfisher",
+    "Binding": "Hardcover",
+    "Number of Pages": 311,
+    "Year Published": 2001,
+    "Original Publication Year": 1883,
+    "Date Read": "2016/01/01",
+    "Date Added": "2017/07/02",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* TheGreekMyths */
+  {
+    "Book Id": 820461,
+    "Cover": TheGreekMyths,
+    "Title": "The Greek Myths",
+    "Author": "Robert Graves",
+    "Author l-f": "Graves, Robert",
+    "Additional Authors": "",
+    "ISBN": "0140171991",
+    "ISBN13": 9780140171990,
+    "My Rating": 2,
+    "Average Rating": 4.17,
+    "Publisher": "Penguin Group",
+    "Binding": "Paperback",
+    "Number of Pages": 782,
+    "Year Published": 1992,
+    "Original Publication Year": 1955,
+    "Date Read": "2017/05/01",
+    "Date Added": "2017/05/15",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* TheSurgeonofCrowthorne */
+  {
+    "Book Id": 5323023,
+    "Cover": TheSurgeonofCrowthorne,
+    "Title": "The Surgeon of Crowthorne",
+    "Author": "Simon Winchester",
+    "Author l-f": "Winchester, Simon",
+    "Additional Authors": "",
+    "ISBN": "0141037717",
+    "ISBN13": 9780141037714,
+    "My Rating": 4,
+    "Average Rating": 3.83,
+    "Publisher": "Popular Penguins",
+    "Binding": "Paperback",
+    "Number of Pages": 224,
+    "Year Published": 2008,
+    "Original Publication Year": 1998,
+    "Date Read": "2017/06/23",
+    "Date Added": "2017/06/21",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* TheGreatEscape */
+  {
+    "Book Id": 107406,
+    "Cover": TheGreatEscape,
+    "Title": "The Great Escape",
+    "Author": "Paul Brickhill",
+    "Author l-f": "Brickhill, Paul",
+    "Additional Authors": "",
+    "ISBN": "0304356875",
+    "ISBN13": 9780304356874,
+    "My Rating": 4,
+    "Average Rating": 4.21,
+    "Publisher": "Cassell Military",
+    "Binding": "Paperback",
+    "Number of Pages": 288,
+    "Year Published": 2000,
+    "Original Publication Year": 1950,
+    "Date Read": "2017/02/16",
+    "Date Added": "2017/02/06",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* DescartesMeditations */
+  {
+    "Book Id": 144522,
+    "Cover": DescartesMeditations,
+    "Title": "Meditations and Other Metaphysical Writings",
+    "Author": "René Descartes",
+    "Author l-f": "Descartes, René",
+    "Additional Authors": "Desmond M. Clarke",
+    "ISBN": "0140447016",
+    "ISBN13": 9780140447019,
+    "My Rating": 2,
+    "Average Rating": 3.67,
+    "Publisher": "Penguin Classics",
+    "Binding": "Paperback",
+    "Number of Pages": 256,
+    "Year Published": 1998,
+    "Original Publication Year": 1641,
+    "Date Read": "2017/08/07",
+    "Date Added": "2017/07/20",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* ToKillaMockingbird */
+  {
+    "Book Id": 2657,
+    "Cover": ToKillaMockingbird,
+    "Title": "To Kill a Mockingbird",
+    "Author": "Harper Lee",
+    "Author l-f": "Lee, Harper",
+    "Additional Authors": "",
+    "ISBN": "",
+    "ISBN13": null,
+    "My Rating": 3,
+    "Average Rating": 4.27,
+    "Publisher": "Harper Perennial Modern Classics ",
+    "Binding": "Paperback",
+    "Number of Pages": 336,
+    "Year Published": 2006,
+    "Original Publication Year": 1960,
+    "Date Read": "2016/01/01",
+    "Date Added": "2017/01/31",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* HomagetoCatalonia */
+  {
+    "Book Id": 9646,
+    "Cover": HomagetoCatalonia,
+    "Title": "Homage to Catalonia",
+    "Author": "George Orwell",
+    "Author l-f": "Orwell, George",
+    "Additional Authors": "Lionel Trilling",
+    "ISBN": "0156421178",
+    "ISBN13": 9780156421171,
+    "My Rating": 3,
+    "Average Rating": 4.09,
+    "Publisher": "Harcourt, Inc.(Harvest Book)",
+    "Binding": "Paperback",
+    "Number of Pages": 232,
+    "Year Published": 1980,
+    "Original Publication Year": 1938,
+    "Date Read": "2016/01/01",
+    "Date Added": "2017/01/31",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* NeverLetMeGo */
+  {
+    "Book Id": 6334,
+    "Cover": NeverLetMeGo,
+    "Title": "Never Let Me Go",
+    "Author": "Kazuo Ishiguro",
+    "Author l-f": "Ishiguro, Kazuo",
+    "Additional Authors": "",
+    "ISBN": "",
+    "ISBN13": null,
+    "My Rating": 3,
+    "Average Rating": 3.84,
+    "Publisher": "Vintage Books ",
+    "Binding": "Paperback",
+    "Number of Pages": 288,
+    "Year Published": 2010,
+    "Original Publication Year": 2005,
+    "Date Read": "2016/01/01",
+    "Date Added": "2017/01/31",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* GulliversTravels */
+  {
+    "Book Id": 7733,
+    "Cover": GulliversTravels,
+    "Title": "Gulliver's Travels: Travels into Several Remote Nations of the World.",
+    "Author": "Jonathan Swift",
+    "Author l-f": "Swift, Jonathan",
+    "Additional Authors": "Robert DeMaria Jr.",
+    "ISBN": "0141439491",
+    "ISBN13": 9780141439495,
+    "My Rating": 3,
+    "Average Rating": 3.58,
+    "Publisher": "Penguin",
+    "Binding": "Paperback",
+    "Number of Pages": 306,
+    "Year Published": 2003,
+    "Original Publication Year": 1726,
+    "Date Read": "2017/02/01",
+    "Date Added": "2017/02/06",
+    "Bookshelves": "",
+    "Bookshelves with positions": "",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": 1,
+    "Recommended For": "",
+    "Recommended By": "",
+    "Owned Copies": 0,
+    "Original Purchase Date": "",
+    "Original Purchase Location": "",
+    "Condition": "",
+    "Condition Description": "",
+    "BCID": ""
+  },
+  /* TheHobbit */
+  {
+    "Book Id": 5907,
+    "Cover": TheHobbit,
+    "Title": "The Hobbit, or There and Back Again",
+    "Author": "J.R.R. Tolkien",
+    "Author l-f": "Tolkien, J.R.R.",
+    "Additional Authors": "Jemima Catlin, Michael Hague, Douglas A. Anderson",
+    "ISBN": "",
+    "ISBN13": null,
+    "My Rating": 0,
+    "Average Rating": 4.28,
+    "Publisher": "Houghton Mifflin",
+    "Binding": "Paperback",
+    "Number of Pages": 366,
+    "Year Published": 2002,
+    "Original Publication Year": 1937,
+    "Date Read": "2020/01/01",
+    "Date Added": "2022/02/04",
     "Bookshelves": "",
     "Bookshelves with positions": "",
     "Exclusive Shelf": "read",

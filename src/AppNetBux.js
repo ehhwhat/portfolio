@@ -9,14 +9,10 @@ import Button from "./components/Button";
 function AppNetBux() {
     return (
         <div className="App">
-            <main className={'bg-light'}>
-                <div className={'container'}>
-                    <Jumbotron heading="NetBux" subHeading="All the books I have read" />
-                    <HR />
-                </div>
+            <main className={'bg-dark'}>
                 <div className={'container-fluid'}>
                     <div className={'row'}>
-                        <Books data={DataBooksFolio} size={'medium'} />
+                        <Books data={DataBooksFolio} size={'small'} />
                     </div>
                 </div>
             </main>
