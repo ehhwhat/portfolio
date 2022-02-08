@@ -42,10 +42,10 @@ function App() {
                             <p>Description</p>
                             <ul className="">
                                 <li className=""><NavLink to="/AppApps">Apps</NavLink></li>
+                                <li className=""><NavLink to="/AppThoughts">Training Thoughts</NavLink></li>
                                 <li className=""><NavLink to="/AppCV">CV</NavLink></li>
                                 <li className=""><NavLink to="/AppNetBux">NetBux</NavLink></li>
-                                <li className=""><strike>Books</strike></li>
-                                <li className=""><strike>Racing</strike></li>
+                                <li className=""><NavLink to="/AppRaces">Races</NavLink></li>
                             </ul></div>}
                     />
                     <TextImage

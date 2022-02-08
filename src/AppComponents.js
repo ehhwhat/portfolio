@@ -2,6 +2,7 @@ import './App.scss';
 import Jumbotron from './components/Jumbotron';
 import HeadingSection from "./components/HeadingSection";
 import ImgMeThinking from './assets/img/me/me_thinking.png';
+import ImgMeSad from './assets/img/me/me_sad.png';
 import ImgMeSquare from './assets/img/me/me_square.jpg';
 import TextImage from "./components/TextImage";
 import HR from "./components/HR";
@@ -12,43 +13,135 @@ import Experience2 from "./components/Experience2";
 import Books from "./components/Book";
 import Androids from "./assets/img/bookCovers/folio/final/androids.jpg";
 import TheIllustratedMan from "./assets/img/bookCovers/folio/final/the_illustrated_man.jpg";
+import Races from "./components/Races";
+import ImgRunning1 from './assets/img/me/me_running.jpg';
+import Thoughts from "./components/Thoughts";
 
 function AppComponents() {
-    let DataBooks = [
+    let DataThoughts = [
         {
-            "Additional Authors": "Roger Zelazny",
-            "Author": "Philip K. Dick",
-            "Author l-f": "Dick, Philip K.",
-            "Average Rating": 4.08,
-            "BCID": "",
-            "Binding": "Paperback",
-            "Book Id": 7082,
-            "Bookshelves": "",
-            "Bookshelves with positions": "",
-            "Condition": "",
-            "Condition Description": "",
-            "Cover": Androids,
-            "Date Added": "2017/01/31",
-            "Date Read": "2016/01/01",
-            "Exclusive Shelf": "read",
-            "ISBN": "0345404475",
-            "ISBN13": 9780345404473,
-            "My Rating": 4,
-            "My Review": "",
-            "Number of Pages": 244,
-            "Original Publication Year": 1968,
-            "Original Purchase Date": "",
-            "Original Purchase Location": "",
-            "Owned Copies": 0,
-            "Private Notes": "",
-            "Publisher": "Del Rey / Ballantine Books",
-            "Read Count": 1,
-            "Recommended By": "",
-            "Recommended For": "",
-            "Spoiler": "",
-            "Title": "Do Androids Dream of Electric Sheep?",
-            "Year Published": 1996
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
         },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Author": "Author",
+            "Location": "Location",
+            "Photo": ImgMeSad,
+            "Emotion": "Emotion"
+        },
+        {
+            "Date": "Date",
+            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "Author": "Author",
+            "Location": "Location",
+            "Emotion": "Emotion"
+        }
+    ]
+    let DataRaces = [
+        {
+            "Race": "Hatfield 5",
+            "Date": "26/11/2017",
+            "Distance": "5 mile",
+            "Result": "00:35:54",
+            "Photo": ImgRunning1
+        }
+    ]
+    let DataBooks = [
         {
             "Additional Authors": "",
             "Author": "Ray Bradbury",
@@ -235,17 +328,28 @@ function AppComponents() {
                     </section>
 
                     <section className="row section-row justify-content-start">
-                        <div className="col-sm-12 col-md-6 col-lg-3" id="">
+                        <div className="col-sm-12" id="">
                             <HeadingSection heading={'Books / Book'} />
+                            <Books data={DataBooks} size={'large'} />
+                        </div>
+                    </section>
+
+                    <section className="row section-row justify-content-start">
+                        <div className="col-sm-12" id="">
+                            <HeadingSection heading={'Races / Race'} />
+                            <Races data={DataRaces} size={'large'} />
+                        </div>
+                    </section>
+
+                    <section className="row section-row justify-content-start">
+                        <div className="col-sm-12" id="">
+                            <HeadingSection heading={'Thoughts / Thought'} />
+                            <Thoughts data={DataThoughts} size={'large'} />
                         </div>
                     </section>
 
                 </div>
-                <div className={'container-fluid'}>
-                    <div className={'row'}>
-                    <Books data={DataBooks} size={'large'} />
-                    </div>
-                </div>
+
             </main>
         </div>
     );

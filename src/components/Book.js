@@ -50,14 +50,9 @@ class Books extends Component {
 
         return (
             <section className="row section-row justify-content-start g-0 books">
-
                 {dataList}
-                <div className={cardSize} key={'total'}>
-                    <div className="book card rounded-0">
-                        <div className="card-body p-4 d-flex align-items-end">
-                            <h1 className={'display-6 text-white'}>{numberOfBooks}</h1>
-                        </div>
-                    </div>
+                <div className={`${cardSize} d-flex align-items-center justify-content-center`} key={'total'}>
+                    <span className={'display-1'}>{numberOfBooks}</span>
                 </div>
             </section>
         );

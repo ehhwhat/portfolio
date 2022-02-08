@@ -2,6 +2,7 @@
 .text-image{
   &__image {
     position: relative;
+    transition: all 10s!important;
   }
   .overlay {
     background:black;
@@ -15,6 +16,15 @@
     &:hover {
       opacity: 0;
       transition: all 0.25s;
+    }
+  }
+
+  &.text-image--slide_effect {
+    &:hover {
+      .text-image__image {
+        background-position: center!important;
+        transition: all 20s!important;
+      }
     }
   }
 }
