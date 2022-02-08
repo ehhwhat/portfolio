@@ -1,10 +1,6 @@
 import './App.scss';
-import Jumbotron from './components/Jumbotron';
 import DataBooksFolio from "./assets/data/DataBooksFolio";
-import DataBooks from "./assets/data/DataBooks";
 import Books from "./components/Book";
-import HR from "./components/HR";
-import Button from "./components/Button";
 
 function AppNetBux() {
     return (
