@@ -1,4 +1,5 @@
 import './App.scss';
+import React,{} from 'react';
 import { NavLink } from 'react-router-dom';
 import Jumbotron from './components/Jumbotron';
 import TextImage from './components/TextImage';
