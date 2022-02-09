@@ -4,6 +4,62 @@ import meSad from "../img/me/me_sad.png";
 
 const DataThoughts = [
   {
+    "Date": "10/02/2022",
+    "Thought": "The best thing about being new to a sport is that nearly every race is a PB.",
+    "Author": "Me",
+    "Location": "for the first few years of running",
+    "Photo": meHappy,
+    "Emotion": "Happy"
+  },
+  {
+    "Date": "10/02/2022",
+    "Thought": "No words",
+    "Author": "Me",
+    "Location": "after the Dorney Half",
+    "Photo": meSad,
+    "Emotion": "Sad"
+  },
+  {
+    "Date": "10/02/2022",
+    "Thought": "My legs can't move very fast.",
+    "Author": "Me",
+    "Location": "after losing an 800m race to a girl",
+    "Photo": "",
+    "Emotion": "Sad"
+  },
+  {
+    "Date": "10/02/2022",
+    "Thought": "If the why is strong, the how is easy.",
+    "Author": "Me",
+    "Location": "trying to sound clever",
+    "Photo": "",
+    "Emotion": "Thinking"
+  },
+  {
+    "Date": "10/02/2022",
+    "Thought": "Whats worse, an FTP test or an all out 5km?",
+    "Author": "Me",
+    "Location": "looking forward to test week",
+    "Photo": meThinking,
+    "Emotion": "Thinking"
+  },
+  {
+    "Date": "09/02/2022",
+    "Thought": "My knee hurts, so does my back... and my shoulders, oh and my calves.",
+    "Author": "Me",
+    "Location": "always",
+    "Photo": meSad,
+    "Emotion": "Sad"
+  },
+  {
+    "Date": "08/02/2022",
+    "Thought": "Being a terrible swimmer is great as you get to pass everyone on the bike and run.",
+    "Author": "Me",
+    "Location": "during every triathlon",
+    "Photo": "",
+    "Emotion": "Happy"
+  },
+  {
     "Date": "02/02/2022",
     "Thought": "Why do you never get back what you lose when running uphill or into wind?",
     "Author": "Me",
@@ -49,7 +105,7 @@ const DataThoughts = [
     "Author": "Me",
     "Location": "at the lake",
     "Photo": meThinking,
-    "Emotion": "Emotion"
+    "Emotion": "Thinking"
   },
   {
     "Date": "29/09/2020",
