@@ -47,6 +47,7 @@ function App() {
                                 <li className=""><NavLink to="/AppCV">CV</NavLink></li>
                                 <li className=""><NavLink to="/AppNetBux">NetBux</NavLink></li>
                                 <li className=""><NavLink to="/AppRaces">Races</NavLink></li>
+                                <li className=""><NavLink to="/AppNetflixRaces">Netflix Races</NavLink></li>
                             </ul></div>}
                     />
                     <TextImage

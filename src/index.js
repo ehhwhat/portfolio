@@ -17,6 +17,7 @@ import AppNetBux from './AppNetBux';
 import AppApps from './AppApps';
 import AppRaces from './AppRaces';
 import AppThoughts from './AppThoughts';
+import AppNetflixRaces from './AppNetflixRaces';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
@@ -45,6 +46,7 @@ ReactDOM.render(
               <Route path="/AppNetBux" element={<AppNetBux />} />
               <Route path="/AppRaces" element={<AppRaces />} />
               <Route path="/AppThoughts" element={<AppThoughts />} />
+              <Route path="/AppNetflixRaces" element={<AppNetflixRaces />} />
           </Routes>
           <Footer />
       </Router>
