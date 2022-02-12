@@ -23,11 +23,12 @@ class Books extends Component {
 
         let dataList = orderedTitleAlphaAZ.map((book, i) =>
             <div className={cardSize} id={'book'+i} key={'book'+i}>
-                <div className="book card rounded-0" id="" style={{
+                <div className="book card rounded-0 animate__animated animate__fadeIn" id="" style={{
                     backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
-                    backgroundImage:`url(${book.Cover})`
+                    backgroundImage:`url(${book.Cover})`,
+                    animationDelay:`${(i / 25)}s`
                 }}>
                     <div className="card-body p-4 d-flex align-items-end">
                         <div className={'book__overlay'}></div>
