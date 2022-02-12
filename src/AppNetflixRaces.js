@@ -6,7 +6,6 @@ import ImageRace from "./components/ImageRace";
 import ImageRaceTotal from "./components/ImageRaceTotal";
 import ImageRaceCover from "./components/ImageRaceCover";
 import DataRaces from "./assets/data/DataRaces"
-import FilterButton from "./components/FilterButton";
 
 class AppNetflixRaces extends Component {
 
