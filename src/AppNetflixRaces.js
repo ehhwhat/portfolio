@@ -1,11 +1,12 @@
 import './App.scss';
-import './assets/styles/hide-header.scss'
-import './assets/styles/hide-footer.scss'
 import React, { Component } from 'react';
+import HideHeader from './components/HideHeader'
+import HideFooter from './components/HideFooter'
 import ImageRace from "./components/ImageRace";
 import ImageRaceTotal from "./components/ImageRaceTotal";
 import ImageRaceCover from "./components/ImageRaceCover";
 import DataRaces from "./assets/data/DataRaces"
+import FilterButton from "./components/FilterButton";
 
 class AppNetflixRaces extends Component {
 
@@ -62,6 +63,8 @@ class AppNetflixRaces extends Component {
 
         return (
             <div className="App AppNetflixRaces bg-black">
+                <HideHeader />
+                <HideFooter />
                 <main className={''}>
 
                     {racesCover}

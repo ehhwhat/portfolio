@@ -113,6 +113,13 @@
     &::-webkit-scrollbar {
       display: none;
     }
+
+    @for $i from 1 through 100 {
+      > :nth-child(#{$i}n) .AppNetflixRaces__image {
+        animation-delay: #{1 + ($i * 0.25)}s;
+      }
+    }
+
     &--large {
       .AppNetflixRaces__item {
         width:45vw;

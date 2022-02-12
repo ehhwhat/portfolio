@@ -5,7 +5,7 @@ class ImageRace extends Component {
         return (
             <li className={'AppNetflixRaces__item'}>
                 <div className={'AppNetflixRaces__item-wrapper d-flex justify-content-center align-items-center'}>
-                    <div className={'AppNetflixRaces__image'} style={{backgroundImage:`url(${this.props.photo})`}} >&nbsp;</div>
+                    <div className={'AppNetflixRaces__image animate__animated animate__fadeIn'} style={{backgroundImage:`url(${this.props.photo})`}}>&nbsp;</div>
                     <div className={'AppNetflixRaces__item-text'}>
                         <span className={'AppNetflixRaces__item-text-date'}>{this.props.date}</span>
                         <span className={'AppNetflixRaces__item-text-race'}>{this.props.race}</span>

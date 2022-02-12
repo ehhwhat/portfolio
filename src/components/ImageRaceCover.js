@@ -4,7 +4,7 @@ class ImageRaceCover extends Component {
     render() {
         console.log('ImageRaceCover');
         return (
-            <div className={'container-fluid AppNetflixRaces__container'} style={{backgroundImage: `url(${this.props.photo})`}}>
+            <div className={'container-fluid AppNetflixRaces__container animate__animated animate__fadeIn animate__delay-1s'} style={{backgroundImage: `url(${this.props.photo})`}}>
                 <div className={'row AppNetflixRaces__row--highlight '}>
                     <div className={'col-12'}>
                         <div className={'AppNetflixRaces__content'}>
