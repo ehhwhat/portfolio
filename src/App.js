@@ -1,4 +1,5 @@
 import './App.scss';
+import 'animate.css';
 import React,{} from 'react';
 import { NavLink } from 'react-router-dom';
 import Jumbotron from './components/Jumbotron';
