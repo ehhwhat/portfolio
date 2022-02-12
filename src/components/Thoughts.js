@@ -26,32 +26,32 @@ class Thoughts extends Component {
         let numberOfThoughts = data.length;
 
         let dataList = this.state.data.map((thought, i) =>
-            <div className={`col-12 col-sm-12 col-md-6  ${i % 2 === 0 ? i % 3 === 0 ? 'col-lg-3 col-xl-3' : 'col-lg-5 col-xl-5' : 'col-lg-4 col-xl-4'}`} key={'thought'+i}>
-                <div className="card mb-4">
-                    {thought.Photo ? <img src={thought.Photo} className="card-img-top" alt={thought.Emotion}/> : ''}
-                    <div className="p-5">
-                        <blockquote className="blockquote mb-0">
-                            <p className={'small text-muted'}>{thought.Date}</p>
-                            <p className={`${i % 2 === 0 ? i % 3 === 0 ? 'display-6' : 'display-4' : 'display-5'} mb-4`}>{thought.Thought}</p>
-                            <footer className="small text-muted">{thought.Author}, <cite title="Source Title">{thought.Location}</cite></footer>
-                        </blockquote>
-                    </div>
+            <div key={'thought'+i} className={`card thought mb-5 ${thought.Photo ? '' : 'bg-transparent shadow-0'} animate__animated animate__fadeIn`} style={{animationDelay:`${(i / 10)}s`}}>
+                {thought.Photo ? <img src={thought.Photo} className="card-img-top" alt={thought.Emotion}/> : ''}
+                <div className={`${thought.Photo ? 'p-5' : 'p-5'}`}>
+                    <blockquote className={`blockquote mb-0 ${thought.Photo ? '' : 'text-danger'}`}>
+                        <p className={'small opacity-50'}>{thought.Date}</p>
+                        <p className={`${thought.Photo ? 'display-6' : ' display-4'} mb-4`}>{thought.Thought}</p>
+                        <footer className="small opacity-50">{thought.Author}, <cite title="Source Title">{thought.Location}</cite></footer>
+                    </blockquote>
                 </div>
             </div>
         );
 
         return (
-            <section className="row section-row justify-content-start thoughts">
-                <div className={`col-12 d-flex align-items-center justify-content-center`} key={'total'}>
-                    <span className={'display-1 mb-4'}>{numberOfThoughts}</span>
+            <section className="row section-row justify-content-start thoughts py-5">
+                <div className={'card-columns'}>
+                    <div className={`card bg-transparent shadow-0 mb-4 d-flex align-items-center justify-content-center animate__animated animate__fadeIn`}>
+                        <div className={`p-5 d-grid gap-2`}>
+                            <span className={'display-4 text-center'}>{numberOfThoughts}</span>
+                            <FilterButton buttonText={"All"} block={true} onClick={this.handleClick('All')} />
+                            <FilterButton buttonText={"Happy"} block={true} onClick={this.handleClick('Happy')} />
+                            <FilterButton buttonText={"Sad"} block={true} onClick={this.handleClick('Sad')} />
+                            <FilterButton buttonText={"Thinking"} block={true} onClick={this.handleClick('Thinking')} />
+                        </div>
+                    </div>
+                    {dataList}
                 </div>
-                <div className={`col-12 text-center`} key={'filters'}>
-                    <FilterButton buttonText={"All"} onClick={this.handleClick('All')} />
-                    <FilterButton buttonText={"Happy"} onClick={this.handleClick('Happy')} />
-                    <FilterButton buttonText={"Sad"} onClick={this.handleClick('Sad')} />
-                    <FilterButton buttonText={"Thinking"} onClick={this.handleClick('Thinking')} />
-                </div>
-                {dataList}
             </section>
         );
     }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class FilterButton extends Component {
     render() {
         return (
-            <button className={'btn btn-danger mb-4 filter-button'} onClick={this.props.onClick}>{this.props.buttonText}</button>
+            <button className={`btn btn-danger filter-button ${this.props.block ? 'button-block' : ''}`} onClick={this.props.onClick}>{this.props.buttonText}</button>
         );
     }
 }

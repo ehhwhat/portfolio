@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aefab707.css",
-    "main.js": "/static/js/main.819c6da9.js",
+    "main.css": "/static/css/main.7cd7e06e.css",
+    "main.js": "/static/js/main.eb132954.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
     "static/media/me_happy_tall.jpg": "/static/media/me_happy_tall.a2b3f4198f1cbd0f2da8.jpg",
     "static/media/audleyvillages.jpg": "/static/media/audleyvillages.d25992d9604310a208a8.jpg",
@@ -128,12 +128,12 @@
     "static/media/css.svg": "/static/media/css.74d7bcc15b667f1b98e7c0170080357e.svg",
     "static/media/html.svg": "/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "static/media/js.svg": "/static/media/js.61c1fa6b2ee4eb8ce8d0e0c25ab67854.svg",
-    "main.aefab707.css.map": "/static/css/main.aefab707.css.map",
-    "main.819c6da9.js.map": "/static/js/main.819c6da9.js.map",
+    "main.7cd7e06e.css.map": "/static/css/main.7cd7e06e.css.map",
+    "main.eb132954.js.map": "/static/js/main.eb132954.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aefab707.css",
-    "static/js/main.819c6da9.js"
+    "static/css/main.7cd7e06e.css",
+    "static/js/main.eb132954.js"
   ]
 }
