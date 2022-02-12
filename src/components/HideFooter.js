@@ -4,7 +4,7 @@ class HideFooter extends Component {
     render() {
         return (
             <style dangerouslySetInnerHTML={{__html: `
-                footer { display: none; }
+                #root > footer { display: none; }
             `}} />
         );
     }

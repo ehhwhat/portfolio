@@ -4,7 +4,7 @@ class HideHeader extends Component {
     render() {
         return (
             <style dangerouslySetInnerHTML={{__html: `
-                header { display: none; }
+                #root > header { display: none; }
             `}} />
         );
     }
