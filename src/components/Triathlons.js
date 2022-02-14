@@ -32,24 +32,44 @@ class Triathlons extends Component {
 
         let dataList = this.state.data.map((triathlon, i) =>
             <tr key={'triathlon'+i} className={'animate__animated animate__fadeIn'} style={{animationDelay:`${(i / 25)}s`}}>
+
+                {/*{console.log('RUN '+triathlon.RunTime.split(':'))}*/}
+                {/*{console.log('RUN Seconds '+((+triathlon.RunTime.split(':')[0]) * 60 * 60 + (+triathlon.RunTime.split(':')[1]) * 60 + (+triathlon.RunTime.split(':')[2])))}*/}
+                {/*{console.log('RUN Divided by distance '+(((+triathlon.RunTime.split(':')[0]) * 60 * 60 + (+triathlon.RunTime.split(':')[1]) * 60 + (+triathlon.RunTime.split(':')[2])) / triathlon.RunDistance))}*/}
+                {/*{console.log('RUN x 1000 ' +(((+triathlon.RunTime.split(':')[0]) * 60 * 60 + (+triathlon.RunTime.split(':')[1]) * 60 + (+triathlon.RunTime.split(':')[2])) / triathlon.RunDistance) * 1000)}*/}
+                {/*{console.log('RUN Final '+new Date((((+triathlon.RunTime.split(':')[0]) * 60 * 60 + (+triathlon.RunTime.split(':')[1]) * 60 + (+triathlon.RunTime.split(':')[2])) / triathlon.RunDistance) * 1000).toISOString().substr(14, 5))}*/}
+
+                {/*{console.log('SWIM '+triathlon.SwimTime.split(':'))}*/}
+                {/*{console.log('SWIM Seconds '+((+triathlon.SwimTime.split(':')[0]) * 60 * 60 + (+triathlon.SwimTime.split(':')[1]) * 60 + (+triathlon.SwimTime.split(':')[2])))}*/}
+                {/*{console.log('SWIM Divided by distance '+(((+triathlon.SwimTime.split(':')[0]) * 60 * 60 + (+triathlon.SwimTime.split(':')[1]) * 60 + (+triathlon.SwimTime.split(':')[2])) / (triathlon.SwimDistance / 100)))}*/}
+                {/*{console.log('SWIM x 1000 '+(((+triathlon.SwimTime.split(':')[0]) * 60 * 60 + (+triathlon.SwimTime.split(':')[1]) * 60 + (+triathlon.SwimTime.split(':')[2])) / (triathlon.SwimDistance / 100)) * 1000)}*/}
+                {/*{console.log('SWIM Final '+new Date((((+triathlon.SwimTime.split(':')[0]) * 60 * 60 + (+triathlon.SwimTime.split(':')[1]) * 60 + (+triathlon.SwimTime.split(':')[2])) / (triathlon.SwimDistance / 100)) * 1000).toISOString().substr(14, 5))}*/}
+
+                {/*{console.log('BIKE '+triathlon.BikeTime.split(':'))}*/}
+                {/*{console.log('BIKE Seconds '+((+triathlon.BikeTime.split(':')[0]) * 60 * 60 + (+triathlon.BikeTime.split(':')[1]) * 60 + (+triathlon.BikeTime.split(':')[2])))}*/}
+                {/*{console.log('BIKE Divided by distance '+(triathlon.BikeDistance / ((+triathlon.BikeTime.split(':')[0]) * 60 * 60 + (+triathlon.BikeTime.split(':')[1]) * 60 + (+triathlon.BikeTime.split(':')[2]))))}*/}
+                {/*{console.log('BIKE x 1000 ' +(triathlon.BikeDistance / ((+triathlon.BikeTime.split(':')[0]) * 60 * 60 + (+triathlon.BikeTime.split(':')[1]) * 60 + (+triathlon.BikeTime.split(':')[2]))) * 1000)}*/}
+                {/*{console.log('BIKE x 3.6 ' +((triathlon.BikeDistance / ((+triathlon.BikeTime.split(':')[0]) * 60 * 60 + (+triathlon.BikeTime.split(':')[1]) * 60 + (+triathlon.BikeTime.split(':')[2]))) * 1000) * 3.6)}*/}
+                {/*{console.log('BIKE Final ' +(((triathlon.BikeDistance / ((+triathlon.BikeTime.split(':')[0]) * 60 * 60 + (+triathlon.BikeTime.split(':')[1]) * 60 + (+triathlon.BikeTime.split(':')[2]))) * 1000) * 3.6).toFixed(2))}*/}
+
                 <td>{triathlon.Event}</td>
                 <td>{triathlon.Distance}</td>
                 <td>{triathlon.Date}</td>
                 <td>{triathlon.SwimDistance}</td>
                 <td>{triathlon.SwimTime}</td>
-                {this.state.DataType === "Short" ? null : <td>{triathlon.SwimPace}</td>}
+                {this.state.DataType === "Short" ? null : <td>{new Date((((+triathlon.SwimTime.split(':')[0]) * 60 * 60 + (+triathlon.SwimTime.split(':')[1]) * 60 + (+triathlon.SwimTime.split(':')[2])) / (triathlon.SwimDistance / 100)) * 1000).toISOString().substr(14, 5)}</td>}
                 {this.state.DataType === "Short" ? null : <td>{triathlon.SwimHR}</td>}
                 <td>{triathlon.T1}</td>
                 <td>{triathlon.BikeDistance}</td>
                 <td>{triathlon.BikeTime}</td>
-                {this.state.DataType === "Short" ? null : <td>{triathlon.BikePace}</td>}
+                {this.state.DataType === "Short" ? null : <td>{(((triathlon.BikeDistance / ((+triathlon.BikeTime.split(':')[0]) * 60 * 60 + (+triathlon.BikeTime.split(':')[1]) * 60 + (+triathlon.BikeTime.split(':')[2]))) * 1000) * 3.6).toFixed(2)}</td>}
                 {this.state.DataType === "Short" ? null : <td>{triathlon.BikePower}</td>}
                 {this.state.DataType === "Short" ? null : <td>{triathlon.BikeHR}</td>}
                 {this.state.DataType === "Short" ? null : <td>{triathlon.BikeElevation}</td>}
                 <td>{triathlon.T2}</td>
                 <td>{triathlon.RunDistance}</td>
                 <td>{triathlon.RunTime}</td>
-                {this.state.DataType === "Short" ? null : <td>{triathlon.RunPace}</td>}
+                {this.state.DataType === "Short" ? null : <td>{new Date((((+triathlon.RunTime.split(':')[0]) * 60 * 60 + (+triathlon.RunTime.split(':')[1]) * 60 + (+triathlon.RunTime.split(':')[2])) / triathlon.RunDistance) * 1000).toISOString().substr(14, 5)}</td>}
                 {this.state.DataType === "Short" ? null : <td>{triathlon.RunHR}</td>}
                 {this.state.DataType === "Short" ? null : <td>{triathlon.RunElevation}</td>}
                 <td><strong>{triathlon.Finish}</strong></td>
@@ -83,9 +103,9 @@ class Triathlons extends Component {
                                 <tr className={'primary-headings'}>
                                     <th colSpan={'3'}>&nbsp;</th>
                                     <th colSpan={'2'}><span className={'display-6'}>Swim</span></th>
-                                    <th colSpan={'1'}>&nbsp;</th>
+                                    <th colSpan={'1'}><span className={'display-6'}>T1</span></th>
                                     <th colSpan={'2'}><span className={'display-6'}>Bike</span></th>
-                                    <th colSpan={'1'}>&nbsp;</th>
+                                    <th colSpan={'1'}><span className={'display-6'}>T2</span></th>
                                     <th colSpan={'2'}><span className={'display-6'}>Run</span></th>
                                     <th colSpan={'1'}>&nbsp;</th>
                                 </tr>
@@ -93,9 +113,9 @@ class Triathlons extends Component {
                                 <tr className={'primary-headings'}>
                                     <th colSpan={'3'}>&nbsp;</th>
                                     <th colSpan={'4'}><span className={'display-6'}>Swim</span></th>
-                                    <th colSpan={'1'}>&nbsp;</th>
+                                    <th colSpan={'1'}><span className={'display-6'}>T1</span></th>
                                     <th colSpan={'6'}><span className={'display-6'}>Bike</span></th>
-                                    <th colSpan={'1'}>&nbsp;</th>
+                                    <th colSpan={'1'}><span className={'display-6'}>T2</span></th>
                                     <th colSpan={'5'}><span className={'display-6'}>Run</span></th>
                                     <th colSpan={'2'}>&nbsp;</th>
                                     <th colSpan={'3'}><span className={'display-6'}>Variables</span></th>
@@ -109,10 +129,10 @@ class Triathlons extends Component {
                                     <th>Date</th>
                                     <th>Dist</th>
                                     <th>Time</th>
-                                    <th>T1</th>
+                                    <th>Time</th>
                                     <th>Dist</th>
                                     <th>Time</th>
-                                    <th>T2</th>
+                                    <th>Time</th>
                                     <th>Dist</th>
                                     <th>Time</th>
                                     <th>Finish</th>
@@ -126,32 +146,32 @@ class Triathlons extends Component {
                                     <th>Time</th>
                                     <th>Pace</th>
                                     <th>HR</th>
-                                    <th>T1</th>
+                                    <th>Time</th>
+                                    <th>Dist</th>
+                                    <th>Time</th>
+                                    <th>Spd</th>
+                                    <th>Pwr</th>
+                                    <th>HR</th>
+                                    <th>Ele</th>
+                                    <th>Time</th>
                                     <th>Dist</th>
                                     <th>Time</th>
                                     <th>Pace</th>
-                                    <th>PWR</th>
                                     <th>HR</th>
                                     <th>Ele</th>
-                                    <th>T2</th>
-                                    <th>Dist</th>
-                                    <th>Time</th>
-                                    <th>Pace</th>
-                                    <th>HR</th>
-                                    <th>Ele</th>
-                                    <th>Finish</th>
+                                    <th>Result</th>
                                     <th>Feel</th>
-                                    <th>Weight</th>
+                                    <th>Lbs</th>
                                     <th>Fatigue</th>
                                     <th>Form</th>
-                                    <th>Temp</th>
-                                    <th>Humidity</th>
-                                    <th>Wind</th>
-                                    <th>Heat</th>
-                                    <th>Wind</th>
-                                    <th>Mech</th>
-                                    <th>Head</th>
-                                    <th>Hurt</th>
+                                    <th><i className="bi bi-thermometer-high"></i></th>
+                                    <th><i className="bi bi-cloud"></i></th>
+                                    <th><i className="bi bi-wind"></i></th>
+                                    <th><i className="bi bi-brightness-high"></i></th>
+                                    <th><i className="bi bi-wind"></i></th>
+                                    <th><i className="bi bi-bicycle"></i></th>
+                                    <th><i className="bi bi-emoji-frown"></i></th>
+                                    <th><i className="bi bi-bandaid"></i></th>
                                 </tr>}
                             </thead>
                             <tbody>
