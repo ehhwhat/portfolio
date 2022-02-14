@@ -30,8 +30,6 @@ class Triathlons extends Component {
 
     render() {
 
-        let data = this.state.data;
-
         let dataList = this.state.data.map((triathlon, i) =>
             <tr key={'triathlon'+i} className={'animate__animated animate__fadeIn'} style={{animationDelay:`${(i / 25)}s`}}>
                 <td>{triathlon.Event}</td>
