@@ -90,11 +90,6 @@ class Triathlons extends Component {
 
         return (
             <div className={'container-fluid g-0'}>
-                <div className={'row'}>
-                    <div className={'col-12 text-center'}>
-
-                    </div>
-                </div>
                 <div className={'d-flex justify-content-center align-items-center table-wrapper'}>
                     <div className={'table-responsive'}>
                         <table className={`table table-hover animate__animated animate__fadeIn ${this.state.DataType === "Short" ? null : 'table-condensed'}`}>
@@ -180,17 +175,18 @@ class Triathlons extends Component {
                         </table>
                     </div>
                 </div>
+
+                <FilterButton extraClass={'btn-more-less'} onClick={this.handleClick(this.state.DataType)}>
+                    <i className="bi bi-plus-slash-minus"></i>
+                </FilterButton>
                 <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i className="bi bi-list"></i>
                 </button>
+
                 <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog rounded">
-                        <div className="modal-content bg-light rounded">
+                        <div className="modal-content rounded">
                             <div className="modal-body p-5">
-                                <div className={'mb-2'}>
-                                    <p className={'mb-0'}><strong>More / Less</strong></p>
-                                    <FilterButton buttonText={"Toggle Details"} extraClass={'mb-2'} onClick={this.handleClick(this.state.DataType)} />
-                                </div>
                                 <div className={'mb-0'}>
                                     <p className={'mb-0'}><strong>Distance</strong></p>
                                     <FilterButton buttonText={"All"} extraClass={'mb-2'} onClick={this.handleClick2("All")} />

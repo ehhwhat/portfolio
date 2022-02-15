@@ -4,6 +4,7 @@ import bookImg from "./assets/img/bookCovers/folio/final/TwentyThousandLeaguesun
 import runningImg from "./assets/img/me/me_running.jpg";
 import meThinking from "./assets/img/me/me_thinking.png";
 import TextImage from "./components/TextImage";
+import meRunning from './assets/img/me/me_happy_tall.jpg'
 import {NavLink} from "react-router-dom";
 
 function AppApps() {
@@ -63,6 +64,25 @@ function AppApps() {
                                 </ul>
                                 <p><strong>Version 2.0 will allow filtering of races by year and distance.</strong></p>
                                 <NavLink className={'btn btn-danger'} to="/AppRaces">Races</NavLink>
+                            </div>
+                        )}
+                    />
+                    <TextImage
+                        backgroundImage={meRunning}
+                        heading={'Triathlons'}
+                        subHeading={'Get of an array of objects and build a filterable table of data.'}
+                        id={'triathlons'}
+                        slideEffect={true}
+                        altLayout={true}
+                        content={(<div>
+                                <ul>
+                                    <li>Get an <code>array</code> of <code>objects</code> (my triathlon races)</li>
+                                    <li>Add a row for each item to a <code>table</code></li>
+                                    <li>Use a <code>click event</code> to toggle more or less detail by using <code>setState</code></li>
+                                    <li>Use another <code>click event</code> to <code>filter</code> the race distance in the same way</li>
+                                    <li>Use <code>JS math</code> to work out paces and speed using event discipline time and distance values</li>
+                                </ul>
+                                <NavLink className={'btn btn-danger'} to="/AppTriathlons">Triathlons</NavLink>
                             </div>
                         )}
                     />
