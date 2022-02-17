@@ -179,16 +179,17 @@ class Triathlons extends Component {
                 <FilterButton extraClass={'btn-more-less'} onClick={this.handleClick(this.state.DataType)}>
                     <i className="bi bi-plus-slash-minus"></i>
                 </FilterButton>
-                <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal" data-bs-target="#raceDistance">
                     <i className="bi bi-list"></i>
                 </button>
 
-                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog rounded">
+                <div className="modal fade" id="raceDistance" tabIndex="-1" aria-labelledby="raceDistance" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered rounded">
                         <div className="modal-content rounded">
                             <div className="modal-body p-5">
                                 <div className={'mb-0'}>
-                                    <p className={'mb-0'}><strong>Distance</strong></p>
+                                    <p className={'display-6 mb-0'}>Distance</p>
+                                    <p>Choose which event distance you want to focus on.</p>
                                     <FilterButton buttonText={"All"} extraClass={'mb-2'} onClick={this.handleClick2("All")} />
                                     <FilterButton buttonText={"Sprint"} extraClass={'mb-2'} onClick={this.handleClick2("Sprint")} />
                                     <FilterButton buttonText={"Olympic"} extraClass={'mb-2'} onClick={this.handleClick2("Olympic")} />
@@ -199,6 +200,7 @@ class Triathlons extends Component {
                         </div>
                     </div>
                 </div>
+
             </div>
         );
     }
