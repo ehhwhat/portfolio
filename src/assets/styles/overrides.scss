@@ -106,3 +106,14 @@ body .bg-danger--dark {
 main {
   overflow: auto;
 }
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  font-weight: bold;
+}
+
+.px-xs-0 {
+  @media (max-width: 575px) {
+    padding-left:0;
+    padding-right:0;
+  }
+}

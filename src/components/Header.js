@@ -17,25 +17,9 @@ class Header extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbar-content">
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#introduction">Introduction</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#generic">Generic</a>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className={'nav-link'} to="/AppApps">
-                                        Apps
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#case">Case studies</a>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className={'nav-link'} to="/AppCV">
-                                        CV
-                                    </NavLink>
-                                </li>
+                                <li className="nav-item"><NavLink className={'nav-link'} to="/AppApps">Apps</NavLink></li>
+                                <li className="nav-item"><NavLink className={'nav-link'} to="/AppCases">Case Studies</NavLink></li>
+                                <li className="nav-item"><NavLink className={'nav-link'} to="/AppCV">CV</NavLink></li>
                             </ul>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ function AppApps() {
     return (
         <div className="App">
             <main className={'bg-light'}>
-                <div className={'container'}>
+                <div className={'container px-xs-0'}>
                     <Jumbotron heading={'Apps'} subHeading={'Built in React'} />
                     <TextImage
                         backgroundImage={meThinking}
@@ -27,7 +27,7 @@ function AppApps() {
                                     <li><code>if</code> a photo is found, render an image</li>
                                     <li><code>.length</code> is used to add a total to the end</li>
                                 </ul>
-                                <p><strong>Version 2.0 will allow filtering of races by emotion.</strong></p>
+                                <p><strong>Version 2.0 will allow filtering of thoughts by emotion.</strong></p>
                                 <NavLink className={'btn btn-danger'} to="/AppThoughts">Training Thoughts</NavLink>
                             </div>
                         )}
