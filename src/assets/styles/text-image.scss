@@ -12,10 +12,10 @@
     bottom:0;
     left:0;
     opacity: 0.25;
-    transition: all 0.125s;
+    transition: opacity 0.125s;
     &:hover {
       opacity: 0;
-      transition: background-position 0.25s;
+      transition: opacity 0.25s;
     }
   }
 
