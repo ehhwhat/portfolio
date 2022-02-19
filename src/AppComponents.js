@@ -14,19 +14,18 @@ import Books from "./components/Book";
 import TheIllustratedMan from "./assets/img/bookCovers/folio/final/the_illustrated_man.jpg";
 import Races from "./components/Races";
 import ImgRunning1 from './assets/img/me/me_running.jpg';
-import Thoughts from "./components/Thoughts";
 
 function AppComponents() {
-    let DataThoughts = [
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        }
-    ]
+    // let DataThoughts = [
+    //     {
+    //         "Date": "Date",
+    //         "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //         "Author": "Author",
+    //         "Location": "Location",
+    //         "Photo": ImgMeSad,
+    //         "Emotion": "Emotion"
+    //     }
+    // ]
     let DataRaces = [
         {
             "Race": "Hatfield 5",
