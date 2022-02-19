@@ -25,110 +25,6 @@ function AppComponents() {
             "Location": "Location",
             "Photo": ImgMeSad,
             "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Author": "Author",
-            "Location": "Location",
-            "Photo": ImgMeSad,
-            "Emotion": "Emotion"
-        },
-        {
-            "Date": "Date",
-            "Thought": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-            "Author": "Author",
-            "Location": "Location",
-            "Emotion": "Emotion"
         }
     ]
     let DataRaces = [
@@ -249,8 +145,26 @@ function AppComponents() {
                     <section className="row section-row justify-content-center">
                         <div className="col-sm-12" id="">
                             <HeadingSection heading={'Text Image'} />
+                            <p>On <code>mobile</code> the image is always first</p>
                             <TextImage
                                 backgroundImage={ImgMeThinking}
+                                heading={'Heading'}
+                                subHeading={'Subheading'}
+                                content={<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul><li>Lorem ipsum dolor sit amet</li><li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>}
+                            />
+                            <p className={'mt-5'}>With <code>slideEffect</code> on hover and <code>altLayout</code>.</p>
+                            <TextImage
+                                backgroundImage={ImgMeThinking}
+                                slideEffect={true}
+                                altLayout={true}
+                                heading={'Heading'}
+                                subHeading={'Subheading'}
+                                content={<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul><li>Lorem ipsum dolor sit amet</li><li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>}
+                            />
+                            <p className={'mt-5'}>With <code>overlay</code> on. To be used if image is just a nice to have and I dont want it to distract too much.</p>
+                            <TextImage
+                                backgroundImage={ImgMeThinking}
+                                overlay={true}
                                 heading={'Heading'}
                                 subHeading={'Subheading'}
                                 content={<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul><li>Lorem ipsum dolor sit amet</li><li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li></ul><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>}
@@ -337,13 +251,6 @@ function AppComponents() {
                         <div className="col-sm-12" id="">
                             <HeadingSection heading={'Races / Race'} />
                             <Races data={DataRaces} size={'large'} />
-                        </div>
-                    </section>
-
-                    <section className="row section-row justify-content-start">
-                        <div className="col-sm-12" id="">
-                            <HeadingSection heading={'Thoughts / Thought'} />
-                            <Thoughts data={DataThoughts} size={'large'} />
                         </div>
                     </section>
 

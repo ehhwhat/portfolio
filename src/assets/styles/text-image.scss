@@ -2,7 +2,7 @@
 .text-image{
   &__image {
     position: relative;
-    transition: all 10s!important;
+    transition: background-position 10s!important;
   }
   .overlay {
     background:black;
@@ -12,10 +12,10 @@
     bottom:0;
     left:0;
     opacity: 0.25;
-    transition: all 0.125s;
+    transition: opacity 0.125s;
     &:hover {
       opacity: 0;
-      transition: all 0.25s;
+      transition: opacity 0.25s;
     }
   }
 
@@ -23,7 +23,7 @@
     &:hover {
       .text-image__image {
         background-position: center!important;
-        transition: all 20s!important;
+        transition: background-position 20s!important;
       }
     }
   }

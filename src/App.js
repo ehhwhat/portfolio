@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="App">
             <main className={'bg-light'}>
-                <div className={'container'}>
+                <div className={'container px-xs-0'}>
                     <Jumbotron heading={'Hello World'} subHeading={'I\'m Benjamin'} />
                     <TextImage
                         backgroundImage={ImgMeHappy}
@@ -39,10 +39,10 @@ function App() {
                         heading={'Apps'}
                         subHeading={'Standalone demo`s'}
                         id={'apps'}
-                        content={<div><p>Code I consider to be a standalone application or site.</p>
-                            <p>Description</p>
+                        content={<div><p>Code I consider to be a standalone application or site. The <NavLink to="/AppApps">Apps overview</NavLink> page will include some information about what is happening on each app or page.</p>
+                            <NavLink className={'btn btn-danger mb-4'} to="/AppApps">Apps overview</NavLink>
+                            <p><strong>Direct links</strong></p>
                             <ul className="">
-                                <li className=""><NavLink to="/AppApps">Apps</NavLink></li>
                                 <li className=""><NavLink to="/AppThoughts">Training Thoughts</NavLink></li>
                                 <li className=""><NavLink to="/AppCV">CV</NavLink></li>
                                 <li className=""><NavLink to="/AppNetBux">NetBux</NavLink></li>
@@ -58,15 +58,17 @@ function App() {
                         subHeading={'Recent work'}
                         id={'case'}
                         content={<div><p>An in depth look at some recent work</p>
+                            <NavLink className={'btn btn-danger mb-4'} to="/AppCases">Case studies overview</NavLink>
+                            <p><strong>Direct links</strong></p>
                             <ul className="">
                                 <li><NavLink to="/AppCaseEngine">Engine UK</NavLink></li>
                                 <li><NavLink to="/AppCaseVersantus">Versantus</NavLink></li>
                                 <li><NavLink to="/AppCaseICAEW2">ICAEW 2</NavLink></li>
                                 <li><NavLink to="/AppCaseMerchantCantos">MerchantCantos</NavLink></li>
                                 <li><NavLink to="/AppCaseICAEW1">ICAEW</NavLink></li>
-                                {/*<li><NavLink to="/AppCaseCashplus">Cashplus</NavLink></li>*/}
-                                {/*<li><NavLink to="/AppCaseHomeserveUSA">Homeserve USA</NavLink></li>*/}
-                                {/*<li><NavLink to="/AppCaseHomeserve">Homeserve</NavLink></li>*/}
+                                <li><NavLink to="/AppCaseCashplus">Cashplus</NavLink></li>
+                                <li><NavLink to="/AppCaseHomeserveUSA">Homeserve USA</NavLink></li>
+                                <li><NavLink to="/AppCaseHomeserve">Homeserve</NavLink></li>
                             </ul></div>}
                     />
                 </div>
