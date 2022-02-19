@@ -1,6 +1,5 @@
 import './App.scss';
 import Jumbotron from './components/Jumbotron';
-import HeadingSection from "./components/HeadingSection";
 import Heading1 from "./components/Heading1";
 import Heading2 from "./components/Heading2";
 import Heading3 from "./components/Heading3";
