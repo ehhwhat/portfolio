@@ -2,7 +2,6 @@ import './App.scss';
 import Jumbotron from './components/Jumbotron';
 import HeadingSection from "./components/HeadingSection";
 import ImgMeThinking from './assets/img/me/me_thinking.png';
-import ImgMeSad from './assets/img/me/me_sad.png';
 import ImgMeSquare from './assets/img/me/me_square.jpg';
 import TextImage from "./components/TextImage";
 import HR from "./components/HR";
