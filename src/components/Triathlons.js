@@ -183,9 +183,7 @@ class Triathlons extends Component {
                     <FilterButton extraClass={'appControlsInfo__btn'} onClick={this.handleClick(this.state.DataType)}>
                         <i className="bi bi-plus-slash-minus"></i>
                     </FilterButton>
-                    <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="modal" data-bs-target="#raceDistance"
-                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                    >
+                    <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <i className="bi bi-list"></i>
                     </button>
                     <div className={'appControlsInfo__more collapse'} id="collapseExample">
