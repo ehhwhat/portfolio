@@ -45,9 +45,7 @@ class Thoughts extends Component {
                 </div>
                 <div className={'appControlsInfo'}>
                     <span className={'appControlsInfo__items'}>{numberOfThoughts}</span>
-                    <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="modal" data-bs-target="#raceDistance"
-                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                    >
+                    <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <i className="bi bi-list"></i>
                     </button>
                     <div className={'appControlsInfo__more collapse'} id="collapseExample">
