@@ -41,16 +41,21 @@ class Thoughts extends Component {
         return (
             <section className="row section-row justify-content-start thoughts py-5">
                 <div className={'card-columns'}>
-                    <div className={`card bg-transparent shadow-0 mb-4 d-flex align-items-center justify-content-center animate__animated animate__fadeIn`}>
-                        <div className={`p-5 d-grid gap-2`}>
-                            <span className={'display-4 text-center'}>{numberOfThoughts}</span>
-                            <FilterButton buttonText={"All"} block={true} onClick={this.handleClick('All')} />
-                            <FilterButton buttonText={"Happy"} block={true} onClick={this.handleClick('Happy')} />
-                            <FilterButton buttonText={"Sad"} block={true} onClick={this.handleClick('Sad')} />
-                            <FilterButton buttonText={"Thinking"} block={true} onClick={this.handleClick('Thinking')} />
-                        </div>
-                    </div>
                     {dataList}
+                </div>
+                <div className={'appControlsInfo'}>
+                    <span className={'appControlsInfo__items'}>{numberOfThoughts}</span>
+                    <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="modal" data-bs-target="#raceDistance"
+                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                    >
+                        <i className="bi bi-list"></i>
+                    </button>
+                    <div className={'appControlsInfo__more collapse'} id="collapseExample">
+                        <FilterButton buttonText={"All"} buttonType={'btn-dark'} onClick={this.handleClick('All')} />
+                        <FilterButton buttonText={"Happy"} buttonType={'btn-dark'} onClick={this.handleClick('Happy')} />
+                        <FilterButton buttonText={"Sad"} buttonType={'btn-dark'} onClick={this.handleClick('Sad')} />
+                        <FilterButton buttonText={"Thinking"} buttonType={'btn-dark'} onClick={this.handleClick('Thinking')} />
+                    </div>
                 </div>
             </section>
         );

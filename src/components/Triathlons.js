@@ -30,6 +30,9 @@ class Triathlons extends Component {
 
     render() {
 
+        let data = this.state.data;
+        let numberOfTriathlons = data.length;
+
         let dataList = this.state.data.map((triathlon, i) =>
             <tr key={'triathlon'+i} className={'animate__animated animate__fadeIn'} style={{animationDelay:`${(i / 25)}s`}}>
 
@@ -175,32 +178,24 @@ class Triathlons extends Component {
                         </table>
                     </div>
                 </div>
-
-                <FilterButton extraClass={'btn-more-less'} onClick={this.handleClick(this.state.DataType)}>
-                    <i className="bi bi-plus-slash-minus"></i>
-                </FilterButton>
-                <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal" data-bs-target="#raceDistance">
-                    <i className="bi bi-list"></i>
-                </button>
-
-                <div className="modal fade" id="raceDistance" tabIndex="-1" aria-labelledby="raceDistance" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered rounded">
-                        <div className="modal-content rounded">
-                            <div className="modal-body p-5">
-                                <div className={'mb-0'}>
-                                    <p className={'display-6 mb-0'}>Distance</p>
-                                    <p>Choose which event distance you want to focus on.</p>
-                                    <FilterButton buttonText={"All"} extraClass={'mb-2'} onClick={this.handleClick2("All")} />
-                                    <FilterButton buttonText={"Sprint"} extraClass={'mb-2'} onClick={this.handleClick2("Sprint")} />
-                                    <FilterButton buttonText={"Olympic"} extraClass={'mb-2'} onClick={this.handleClick2("Olympic")} />
-                                    <FilterButton buttonText={"70.3"} extraClass={'mb-2'} onClick={this.handleClick2("70.3")} />
-                                    <FilterButton buttonText={"Full"} extraClass={'mb-2'} onClick={this.handleClick2("Full")} />
-                                </div>
-                            </div>
-                        </div>
+                <div className={'appControlsInfo'}>
+                    <span className={'appControlsInfo__items'}>{numberOfTriathlons}</span>
+                    <FilterButton extraClass={'appControlsInfo__btn'} onClick={this.handleClick(this.state.DataType)}>
+                        <i className="bi bi-plus-slash-minus"></i>
+                    </FilterButton>
+                    <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="modal" data-bs-target="#raceDistance"
+                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                    >
+                        <i className="bi bi-list"></i>
+                    </button>
+                    <div className={'appControlsInfo__more collapse'} id="collapseExample">
+                        <FilterButton buttonText={"All"} buttonType={'btn-dark'} onClick={this.handleClick2('All')} />
+                        <FilterButton buttonText={"Sprint"} buttonType={'btn-dark'} onClick={this.handleClick2('Sprint')} />
+                        <FilterButton buttonText={"Olympic"} buttonType={'btn-dark'} onClick={this.handleClick2('Olympic')} />
+                        <FilterButton buttonText={"70.3"} buttonType={'btn-dark'} onClick={this.handleClick2('70.3')} />
+                        <FilterButton buttonText={"Full"} buttonType={'btn-dark'} onClick={this.handleClick2('Full')} />
                     </div>
                 </div>
-
             </div>
         );
     }
