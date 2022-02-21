@@ -70,45 +70,6 @@
       }
     }
   }
-  .btn-more-less {
-    position: fixed;
-    bottom:1rem;
-    right:4rem;
-    padding:0.5rem;
-    i {
-      font-size:1.5rem;
-      line-height: 0.5rem;
-    }
-  }
-  .btn-modal {
-    position: fixed;
-    bottom:1rem;
-    right:1rem;
-    padding:0.5rem;
-    i {
-      font-size:1.5rem;
-      line-height: 0.5rem;
-    }
-  }
-  .modal-dialog {
-    margin:2rem;
-    @media (min-width: 576px) {
-      max-width: 70vw;
-    }
-    @media (min-width: 768px) {
-      margin:1.75rem auto;
-      max-width: 60vw;
-    }
-    @media (min-width: 992px) {
-      max-width: 50vw;
-    }
-    @media (min-width: 1200px) {
-      max-width: 40vw;
-    }
-    @media (min-width: 1400px) {
-      max-width: 30vw;
-    }
-  }
 }
 
 // Small devices (landscape phones, 576px and up)
