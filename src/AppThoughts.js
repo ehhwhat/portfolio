@@ -4,7 +4,7 @@ import HideHeader from './components/HideHeader';
 import HideFooter from './components/HideFooter';
 // Firebase Data
 import FireBaseThoughts from './components/firebaseThoughts';
-import {onValue, ref} from "firebase/database";
+import {onValue, ref, update} from "firebase/database";
 // Child Components
 import Thoughts from "./components/Thoughts";
 import FilterButton from "./components/FilterButton";
@@ -32,40 +32,29 @@ class AppThoughts extends Component {
         this.state = {
             "data": [
                 {
-                    "Date": "Initial Date 1",
-                    "Thought": "Initial Thought 1",
-                    "Author": "Initial Author 1",
-                    "Location": "Initial Location 1",
-                    "Photo": "Initial Photo 1",
-                    "Emotion": "Initial Emotion 1"
-                },
-                {
-                    "Date": "Initial Date 2",
-                    "Thought": "Initial Thought 2",
-                    "Author": "Initial Author 2",
-                    "Location": "Initial Location 2",
-                    "Photo": "Initial Photo 2",
-                    "Emotion": "Initial Emotion 2"
+                    "Date": "Date not found",
+                    "Thought": "Thought not found",
+                    "Author": "Author not found",
+                    "Location": "Location not found",
+                    "Photo": "Photo not found",
+                    "Emotion": "Emotion not found"
                 }
             ]};
-        console.log('this.state PARENT');
-        console.log(this.state);
-        console.log('this.state.data PARENT');
-        console.log(this.state.data);
     };
 
     componentDidMount() {
-        console.log('componentDidMount PARENT');
+        // Get DATA
         onValue(ref(FireBaseThoughts, '/'), (snapshot) => {
             const data = snapshot.val();
-            console.log('data');
-            console.log(data);
-            let testing = Object.values(data);
-            console.log('testing');
-            console.log(testing);
-            this.setState({data : testing});
-            this.setState({dataAll : testing});
+            // Convert object to array
+            let dataArray = Object.values(data);
+            this.setState({data : dataArray});
+            this.setState({dataAll : dataArray});
         });
+    }
+
+    componentDidUpdate(prevProps,nextProps) {
+
     }
 
     handleClick = value => () => {
@@ -80,13 +69,61 @@ class AppThoughts extends Component {
         }
     };
 
-    render() {
-        console.log('data from state PARENT');
-        console.log(this.state);
+    // Write DATA
+    writeUserData = (date, thought, author, location, emotion) => () => {
+        let originalData = this.state.dataAll;
+        let originalDataLength = originalData.length;
+        let photo = '';
+        if(emotion === 'Happy') {
+            photo = 'assets/img/me/me_happy.png'
+        } else if(emotion === 'Sad') {
+            photo = 'assets/img/me/me_sad.png'
+        } else if(emotion === 'Thinking') {
+            photo = 'assets/img/me/me_thinking.png'
+        } else {
+            photo = ''
+        }
 
+        let newData = {
+            "Date": date,
+            "Thought": thought,
+            "Author": author,
+            "Location": location,
+            "Photo": photo,
+            "Emotion": emotion
+        }
+
+        // set(ref(FireBaseThoughts, '/'), {...originalData,
+        //     [originalDataLength] : newData
+        // });
+
+        update(ref(FireBaseThoughts, '/'+originalDataLength), {...newData});
+        // Reset form
+        document.getElementById('formThoughtEntry').reset();
+    }
+
+    handleDateChange = (e) => {
+        this.setState({"newDate": e.target.value});
+    }
+
+    handleThoughtChange = (e) => {
+        this.setState({"newThought": e.target.value});
+    }
+
+    handleAuthorChange = (e) => {
+        this.setState({"newAuthor": e.target.value});
+    }
+
+    handleLocationChange = (e) => {
+        this.setState({"newLocation": e.target.value});
+    }
+
+    handleEmotionChange = (e) => {
+        this.setState({"newEmotion": e.target.value});
+    }
+
+    render() {
         let data = this.state.data;
-        console.log('data to use from updated state PARENT');
-        console.log(data);
         let numberOfThoughts = data.length;
 
         return (
@@ -95,11 +132,46 @@ class AppThoughts extends Component {
                 <HideFooter />
                 <main className={'bg-light'}>
                     <div className={'container-fluid'}>
-                        <Thoughts data={data} />
+                        <section className="row section-row justify-content-start thoughts py-5">
+                            <div className={'card-columns'}>
+                                <Thoughts data={data} />
+                                <div className="card mb-5 thought-entry">
+                                    <div className="p-5">
+                                        <form id={'formThoughtEntry'} className={'needs-validation'}>
+                                            <div className={'mb-4'}>
+                                                <label htmlFor="Date" className="form-label sr-only">Date</label>
+                                                <input type="date" className="form-control form-control-lg" id="Date" aria-describedby="Date" onChange={this.handleDateChange} required/>
+                                            </div>
+                                            <div className={'mb-4'}>
+                                                <label htmlFor="Thought" className="form-label sr-only">Thought</label>
+                                                <input placeholder={'Thought'} type="text" className="form-control form-control-lg" id="Thought" aria-describedby="Thought" onChange={this.handleThoughtChange} required/>
+                                            </div>
+                                            <div className={'mb-4'}>
+                                                <label htmlFor="Author" className="form-label sr-only">Author</label>
+                                                <input placeholder={'Author'} type="text" className="form-control form-control-lg" id="Author" aria-describedby="Author" onChange={this.handleAuthorChange} required/>
+                                            </div>
+                                            <div className={'mb-4'}>
+                                                <label htmlFor="Location" className="form-label sr-only">Location</label>
+                                                <input placeholder={'Location'} type="text" className="form-control form-control-lg" id="Location" aria-describedby="Location" onChange={this.handleLocationChange} required/>
+                                            </div>
+                                            <div className={'mb-4'}>
+                                                <select className="form-select form-select-lg" aria-label=".form-select-lg example" id="Emotion" aria-describedby="Emotion" onChange={this.handleEmotionChange} required>
+                                                    <option defaultValue>Emotion</option>
+                                                    <option value="Happy">Happy</option>
+                                                    <option value="Sad">Sad</option>
+                                                    <option value="Thinking">Thinking</option>
+                                                </select>
+                                            </div>
+                                            <button type="button" className="btn btn-danger" onClick={this.writeUserData(this.state.newDate, this.state.newThought, this.state.newAuthor, this.state.newLocation, this.state.newEmotion)} >Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <div className={'appControlsInfo'}>
                             <span className={'appControlsInfo__items'}>{numberOfThoughts}</span>
                             <button type="button" className="btn btn-danger appControlsInfo__btn" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <i className="bi bi-list"></i>
+                                <i className="bi bi-list">&nbsp;</i>
                             </button>
                             <div className={'appControlsInfo__more collapse'} id="collapseExample">
                                 <FilterButton buttonText={"All"} buttonType={'btn-dark'} onClick={this.handleClick('All')} />
