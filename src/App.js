@@ -7,8 +7,18 @@ import ImgMeHappy from './assets/img/me/me_happy.png';
 import ImgMeThinking from './assets/img/me/me_thinking.png';
 import ImgGeneric1 from './assets/img/generic/framework.jpeg';
 import ImgGeneric2 from './assets/img/generic/code.jpg';
+//import FireBase from './components/firebase';
 
 function App() {
+    // const test = () => {
+    //     console.log('test');
+    //     const getFromFirebase = FireBase.firestore().collection("test");
+    //     getFromFirebase.onSnapshot((querySnapShot) => {
+    //         console.log(querySnapShot);
+    //     });
+    // };
+
+
     return (
         <div className="App">
             <main className={'bg-light'}>

@@ -1,11 +1,12 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, onValue } from "firebase/database";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+
 // Your web app's Firebase configuration
-const firebaseConfig = {
+const firebaseConfigThoughts = {
 	apiKey: "AIzaSyCkfExCT4AEV9tZjCBtp87pkq9eoSClH2k",
 	authDomain: "portfolio-5a465.firebaseapp.com",
 	databaseURL: "https://portfolio-5a465-thoughts.europe-west1.firebasedatabase.app/",
@@ -16,16 +17,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const test = initializeApp(firebaseConfig);
-const db = getDatabase();
-const dbRef = ref(db, '/');
+const initializeAppThoughts = initializeApp(firebaseConfigThoughts, 'initializeAppThoughts');
+// Get a reference to the database service
+const databaseThoughts = getDatabase(initializeAppThoughts);
+//const dbRefThoughts = ref(getDatabase(initializeAppThoughts));
 
-let test2 = onValue(dbRef, (snapshot) => {
-	const data = snapshot.val();
-	console.log('Inside: dbRef');
-	console.log(data);
-	return data;
-});
-
-console.log("hi" +test2);
-export default test2;
+export default databaseThoughts; // Don’t forget to use export default!
