@@ -7,18 +7,9 @@ import ImgMeHappy from './assets/img/me/me_happy.png';
 import ImgMeThinking from './assets/img/me/me_thinking.png';
 import ImgGeneric1 from './assets/img/generic/framework.jpeg';
 import ImgGeneric2 from './assets/img/generic/code.jpg';
-//import FireBase from './components/firebase';
+import ImgReact from './assets/img/generic/react.jpg';
 
 function App() {
-    // const test = () => {
-    //     console.log('test');
-    //     const getFromFirebase = FireBase.firestore().collection("test");
-    //     getFromFirebase.onSnapshot((querySnapShot) => {
-    //         console.log(querySnapShot);
-    //     });
-    // };
-
-
     return (
         <div className="App">
             <main className={'bg-light'}>
@@ -63,6 +54,16 @@ function App() {
                     />
                     <TextImage
                         altLayout={true}
+                        backgroundImage={ImgReact}
+                        heading={'React'}
+                        subHeading={'Snippets or examples'}
+                        id={'apps'}
+                        content={<div>
+                            <ul className="">
+                                <li className=""><NavLink to="/AppDemo">Demo</NavLink></li>
+                            </ul></div>}
+                    />
+                    <TextImage
                         backgroundImage={ImgGeneric2}
                         heading={'Case Studies'}
                         subHeading={'Recent work'}

@@ -20,6 +20,7 @@ import AppThoughts from './AppThoughts';
 import AppNetflixRaces from './AppNetflixRaces';
 import AppTriathlons from './AppTriathlons';
 import AppCases from './AppCases';
+import AppDemo from './AppDemo';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
@@ -51,6 +52,7 @@ ReactDOM.render(
               <Route path="/AppNetflixRaces" element={<AppNetflixRaces />} />
               <Route path="/AppTriathlons" element={<AppTriathlons />} />
               <Route path="/AppCases" element={<AppCases />} />
+              <Route path="/AppDemo" element={<AppDemo />} />
           </Routes>
           <Footer />
       </Router>

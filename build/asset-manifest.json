@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c790dd38.css",
-    "main.js": "/static/js/main.cb41ea58.js",
+    "main.css": "/static/css/main.6033bf10.css",
+    "main.js": "/static/js/main.f29a5435.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
     "static/media/audleyvillages.jpg": "/static/media/audleyvillages.d25992d9604310a208a8.jpg",
     "static/media/www.icaew.com.png": "/static/media/www.icaew.com.eeb3227e7ffedc172890.png",
@@ -37,6 +37,7 @@
     "static/media/ShackletonsBoatJourney.jpg": "/static/media/ShackletonsBoatJourney.232bfad15c7906fa2809.jpg",
     "static/media/Herts10k.jpg": "/static/media/Herts10k.1e5244bb45ce752cf05a.jpg",
     "static/media/caseEngine.jpg": "/static/media/caseEngine.61bf610c0f27457a993c.jpg",
+    "static/media/react.jpg": "/static/media/react.0134c2b874d4f7b83c9a.jpg",
     "static/media/LondonMarathon2021.jpg": "/static/media/LondonMarathon2021.af0113b69c6d056ef7b5.jpg",
     "static/media/gcas1.jpg": "/static/media/gcas1.428945d5585eca82c7d8.jpg",
     "static/media/caseHomeserveUSA.jpg": "/static/media/caseHomeserveUSA.a6d56cf54dcf508ac205.jpg",
@@ -135,12 +136,12 @@
     "static/media/css.svg": "/static/media/css.74d7bcc15b667f1b98e7c0170080357e.svg",
     "static/media/html.svg": "/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "static/media/js.svg": "/static/media/js.61c1fa6b2ee4eb8ce8d0e0c25ab67854.svg",
-    "main.c790dd38.css.map": "/static/css/main.c790dd38.css.map",
-    "main.cb41ea58.js.map": "/static/js/main.cb41ea58.js.map",
+    "main.6033bf10.css.map": "/static/css/main.6033bf10.css.map",
+    "main.f29a5435.js.map": "/static/js/main.f29a5435.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c790dd38.css",
-    "static/js/main.cb41ea58.js"
+    "static/css/main.6033bf10.css",
+    "static/js/main.f29a5435.js"
   ]
 }
