@@ -60,7 +60,9 @@ function App() {
                         id={'apps'}
                         content={<div>
                             <ul className="">
-                                <li className=""><NavLink to="/AppDemo">Demo</NavLink></li>
+                                <li className=""><NavLink to="/AppDemoStateAndProps">Demo State and Props</NavLink></li>
+                                <li className=""><NavLink to="/AppDemoClickEvents">Demo Click Events</NavLink></li>
+                                <li className=""><NavLink to="/AppDemo">Demo All</NavLink></li>
                             </ul></div>}
                     />
                     <TextImage
