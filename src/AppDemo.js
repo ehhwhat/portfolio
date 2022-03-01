@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './App.scss';
 import HideHeader from './components/HideHeader';
 import HideFooter from './components/HideFooter';
+import {NavLink} from "react-router-dom";
 import {consoleSuccessChild, consoleFailChild, consoleInfo, consoleInfoChild, consoleAction, consoleActionChild} from './components/Console';
 // Local Data
 import DataDemo from './assets/data/DataDemo'
@@ -90,42 +91,46 @@ class AppDemo extends Component {
                 <HideFooter />
                 <main className={`d-flex justify-content-center align-items-center ${this.state.dataSourceColor}`}>
                     <div className={'card parent'}>
-                        <span className={`badge rounded-pill ${this.state.dataSourceColor}`}>{this.state.dataSource}</span>
-                        <p className={'mb-1'}>
-                            <small>
-                                <code>&lt;span className=&#123;`$&#123;this.state.dataSourceColor&#125;`&#125;&gt;&#123;this.state.dataSource&#125;&lt;/span&gt;</code>
-                            </small>
-                        </p>
-                        <h1 className={'display-5'}>Parent</h1>
-                        <pre>
-                            <code>
-                                this.state = &#123;<br/>
-                                &emsp;dataDefault: &#39;{this.state.dataDefault}&#39;,<br/>
-                                &emsp;data: &#39;{this.state.data}&#39;,<br/>
-                                &emsp;dataSource: &#39;{this.state.dataSource}&#39;,<br/>
-                                &emsp;dataSourceColor : &#39;{this.state.dataSourceColor}&#39;<br/>
-                                &#125;;
-                            </code>
-                        </pre>
+                        <div className={'card-body'}>
+                            <span className={`badge rounded-pill ${this.state.dataSourceColor}`}>{this.state.dataSource}</span>
+                            <p className={'mb-1'}>
+                                <small>
+                                    <code>&lt;span className=&#123;`$&#123;this.state.dataSourceColor&#125;`&#125;&gt;&#123;this.state.dataSource&#125;&lt;/span&gt;</code>
+                                </small>
+                            </p>
+                            <h1 className={'display-5'}>Parent</h1>
+                            <pre>
+                                <code>
+                                    this.state = &#123;<br/>
+                                    &emsp;dataDefault: &#39;{this.state.dataDefault}&#39;,<br/>
+                                    &emsp;data: &#39;{this.state.data}&#39;,<br/>
+                                    &emsp;dataSource: &#39;{this.state.dataSource}&#39;,<br/>
+                                    &emsp;dataSourceColor : &#39;{this.state.dataSourceColor}&#39;<br/>
+                                    &#125;;
+                                </code>
+                            </pre>
 
-                        <DemoChild data={this.state.data} log={this.updateLog} />
+                            <DemoChild data={this.state.data} log={this.updateLog} />
 
-                        <div className={'mb-5'}>
-                            <h3 className={'display-6'}>Change source of State</h3>
-                            <p className={'mb-1'}><small><code>&lt;button className=&#123;`btn btn-link btn-inline`&#125; onClick=&#123;this.handleClick('Default')&#125;&gt;Default&lt;/button&gt;</code></small></p>
-                            <button className={`btn btn-link btn-inline`} onClick={this.handleClick('Default')}>Default</button>
-                            <button className={`btn btn-link btn-inline`} onClick={this.handleClick('Local')}>Local</button>
-                            <button className={`btn btn-link btn-inline`} onClick={this.handleClick('External')}>External</button>
-                        </div>
+                            <div className={'mb-5'}>
+                                <h3 className={'display-6'}>Change source of State</h3>
+                                <p className={'mb-1'}><small><code>&lt;button className=&#123;`btn btn-link btn-inline`&#125; onClick=&#123;this.handleClick('Default')&#125;&gt;Default&lt;/button&gt;</code></small></p>
+                                <button className={`btn btn-link btn-inline`} onClick={this.handleClick('Default')}>Default</button>
+                                <button className={`btn btn-link btn-inline`} onClick={this.handleClick('Local')}>Local</button>
+                                <button className={`btn btn-link btn-inline`} onClick={this.handleClick('External')}>External</button>
+                            </div>
 
-                        <div className={'mb-0'}>
-                            <h3 className={'display-6'}>Log</h3>
-                            <ul id={'log'} className={'small list-inline'}>
+                            <div className={'mb-0'}>
+                                <h3 className={'display-6'}>Log</h3>
+                                <ul id={'log'} className={'small list-inline'}>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </main>
+                <NavLink className={'btn btn-dark btn-floating btn-prev'} to="/AppDemoClickEvents"><i className="bi bi-caret-left-fill"></i></NavLink>
+                <NavLink className={'btn btn-dark btn-floating btn-next'} to="/"><i className="bi bi-caret-right-fill"></i></NavLink>
             </div>
         );
     }

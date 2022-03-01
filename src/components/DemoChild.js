@@ -27,12 +27,15 @@ class DemoChild extends Component {
         console.log('%c CHILD render() ', consoleInfoChild);
         return (
             <div id={'child'} className={`card child animate__animated`}>
-                <h2 className="display-6">Child</h2>
-                <p className={'mb-1'}><small><code>&lt;DemoChild data=&#123;this.state.data&#125; /&gt;</code></small></p>
-                <pre><code>
-this.props.data = &#39;{this.props.data}&#39;
-</code></pre>
-                {/*<p dangerouslySetInnerHTML={{__html: this.props.data}}></p>*/}
+                <div className={'card-body'}>
+                    <h2 className="display-6">Child</h2>
+                    <p className={'mb-1'}><small><code>&lt;DemoChild data=&#123;this.state.data&#125; /&gt;</code></small></p>
+                    <pre>
+                        <code>
+                            this.props.data = &#39;{this.props.data}&#39;
+                        </code>
+                    </pre>
+                </div>
             </div>
         );
     }
