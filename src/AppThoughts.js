@@ -3,29 +3,20 @@ import './App.scss';
 import HideHeader from './components/HideHeader';
 import HideFooter from './components/HideFooter';
 // Firebase Data
-import FireBaseThoughts from './components/firebaseThoughts';
+import databaseDefault from './components/firebase';
+import databaseThoughts from './components/firebaseThoughts';
 import {onValue, ref, update} from "firebase/database";
+import {getAuth} from 'firebase/auth'
 // Child Components
 import Thoughts from "./components/Thoughts";
 import FilterButton from "./components/FilterButton";
+import {consoleDefault, consoleDefaultChild} from "./components/Console";
+
+let FireBaseDefaultAuth = databaseDefault.initializeAppDefault;
+let FireBaseThoughts = databaseThoughts.databaseThoughts;
+let FireBaseThoughtsAuth = databaseThoughts.initializeAppThoughts;
 
 class AppThoughts extends Component {
-
-    // Story of AppThoughts
-    // Begin by hiding the Header and Footer by importing specific CSS code
-    // Set an initial STATE in case FirebaseData is not returned
-    // Pass this data to the Child through props
-    // Import FirebaseConfig to get specific AppThoughts data
-    // onValue of FirebaseData convert the object to an array for easier manipulation
-    //      Pass this original grab of data to a separate variable so we can reset to this later
-    // Update the STATE with this new FirebaseData
-    // This will cause the Parent to render() and therefore the Child as well
-    // AppThoughts should now display correctly
-    // The handleClick will start by reverting the STATE back to the original grab
-    //      This will stop the filter being used to filter and filter
-    // The filter is then applied based on the value passed to it
-    // The STATE is updated with the new filtered data
-    // A count of items is performed on the STATE
 
     constructor(props) {
         super(props);
@@ -43,6 +34,7 @@ class AppThoughts extends Component {
     };
 
     componentDidMount() {
+        this.authState();
         // Get DATA
         onValue(ref(FireBaseThoughts, '/'), (snapshot) => {
             const data = snapshot.val();
@@ -122,7 +114,31 @@ class AppThoughts extends Component {
         this.setState({"newEmotion": e.target.value});
     }
 
+    authState = () => {
+        console.log('%c Auth State ', consoleDefault);
+        const appThis = this;
+        getAuth(FireBaseDefaultAuth).onAuthStateChanged(function(user) {
+            if (user) {
+                console.log('%c Someone is logged in to Default ', consoleDefaultChild);
+                appThis.setState({loggedIn: true});
+            } else {
+                console.log('%c No one is logged in to Default ', consoleDefaultChild);
+                appThis.setState({loggedIn: false});
+            }
+        });
+        getAuth(FireBaseThoughtsAuth).onAuthStateChanged(function(user) {
+            if (user) {
+                console.log('%c Someone is logged in to Training Thoughts ', consoleDefaultChild);
+                appThis.setState({loggedInThoughts: true});
+            } else {
+                console.log('%c No one is logged in to Training Thoughts ', consoleDefaultChild);
+                appThis.setState({loggedInThoughts: false});
+            }
+        });
+    }
+
     render() {
+
         let data = this.state.data;
         let numberOfThoughts = data.length;
 
@@ -135,37 +151,39 @@ class AppThoughts extends Component {
                         <section className="row section-row justify-content-start thoughts py-5">
                             <div className={'card-columns'}>
                                 <Thoughts data={data} />
-                                <div className="card mb-5 thought-entry">
-                                    <div className="p-5">
-                                        <form id={'formThoughtEntry'} className={'needs-validation'}>
-                                            <div className={'mb-4'}>
-                                                <label htmlFor="Date" className="form-label sr-only">Date</label>
-                                                <input type="date" className="form-control form-control-lg" id="Date" aria-describedby="Date" onChange={this.handleDateChange} required/>
-                                            </div>
-                                            <div className={'mb-4'}>
-                                                <label htmlFor="Thought" className="form-label sr-only">Thought</label>
-                                                <input placeholder={'Thought'} type="text" className="form-control form-control-lg" id="Thought" aria-describedby="Thought" onChange={this.handleThoughtChange} required/>
-                                            </div>
-                                            <div className={'mb-4'}>
-                                                <label htmlFor="Author" className="form-label sr-only">Author</label>
-                                                <input placeholder={'Author'} type="text" className="form-control form-control-lg" id="Author" aria-describedby="Author" onChange={this.handleAuthorChange} required/>
-                                            </div>
-                                            <div className={'mb-4'}>
-                                                <label htmlFor="Location" className="form-label sr-only">Location</label>
-                                                <input placeholder={'Location'} type="text" className="form-control form-control-lg" id="Location" aria-describedby="Location" onChange={this.handleLocationChange} required/>
-                                            </div>
-                                            <div className={'mb-4'}>
-                                                <select className="form-select form-select-lg" aria-label=".form-select-lg example" id="Emotion" aria-describedby="Emotion" onChange={this.handleEmotionChange} required>
-                                                    <option defaultValue>Emotion</option>
-                                                    <option value="Happy">Happy</option>
-                                                    <option value="Sad">Sad</option>
-                                                    <option value="Thinking">Thinking</option>
-                                                </select>
-                                            </div>
-                                            <button type="button" className="btn btn-danger" onClick={this.writeUserData(this.state.newDate, this.state.newThought, this.state.newAuthor, this.state.newLocation, this.state.newEmotion)} >Submit</button>
-                                        </form>
+                                {this.state.loggedInThoughts ?
+                                    <div className="card mb-5 thought-entry">
+                                        <div className="p-5">
+                                            <form id={'formThoughtEntry'} className={'needs-validation'}>
+                                                <div className={'mb-4'}>
+                                                    <label htmlFor="Date" className="form-label sr-only">Date</label>
+                                                    <input type="date" className="form-control form-control-lg" id="Date" aria-describedby="Date" onChange={this.handleDateChange} required/>
+                                                </div>
+                                                <div className={'mb-4'}>
+                                                    <label htmlFor="Thought" className="form-label sr-only">Thought</label>
+                                                    <input placeholder={'Thought'} type="text" className="form-control form-control-lg" id="Thought" aria-describedby="Thought" onChange={this.handleThoughtChange} required/>
+                                                </div>
+                                                <div className={'mb-4'}>
+                                                    <label htmlFor="Author" className="form-label sr-only">Author</label>
+                                                    <input placeholder={'Author'} type="text" className="form-control form-control-lg" id="Author" aria-describedby="Author" onChange={this.handleAuthorChange} required/>
+                                                </div>
+                                                <div className={'mb-4'}>
+                                                    <label htmlFor="Location" className="form-label sr-only">Location</label>
+                                                    <input placeholder={'Location'} type="text" className="form-control form-control-lg" id="Location" aria-describedby="Location" onChange={this.handleLocationChange} required/>
+                                                </div>
+                                                <div className={'mb-4'}>
+                                                    <select className="form-select form-select-lg" aria-label=".form-select-lg example" id="Emotion" aria-describedby="Emotion" onChange={this.handleEmotionChange} required>
+                                                        <option defaultValue>Emotion</option>
+                                                        <option value="Happy">Happy</option>
+                                                        <option value="Sad">Sad</option>
+                                                        <option value="Thinking">Thinking</option>
+                                                    </select>
+                                                </div>
+                                                <button type="button" className="btn btn-danger" onClick={this.writeUserData(this.state.newDate, this.state.newThought, this.state.newAuthor, this.state.newLocation, this.state.newEmotion)} >Submit</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
+                                : ''}
                             </div>
                         </section>
                         <div className={'appControlsInfo'}>
