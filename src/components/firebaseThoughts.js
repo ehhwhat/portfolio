@@ -4,7 +4,6 @@ import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-
 // Your web app's Firebase configuration
 const firebaseConfigThoughts = {
 	apiKey: "AIzaSyCkfExCT4AEV9tZjCBtp87pkq9eoSClH2k",
@@ -22,4 +21,9 @@ const initializeAppThoughts = initializeApp(firebaseConfigThoughts, 'initializeA
 const databaseThoughts = getDatabase(initializeAppThoughts);
 //const dbRefThoughts = ref(getDatabase(initializeAppThoughts));
 
-export default databaseThoughts; // Don’t forget to use export default!
+const exports = {
+	databaseThoughts,
+	initializeAppThoughts
+}
+
+export default exports; // Don’t forget to use export default!

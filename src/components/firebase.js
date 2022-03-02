@@ -1,17 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getDatabase, ref, child, get, set} from "firebase/database";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-console.log('firebase.js');
-
 // Your web app's Firebase configuration
-const firebaseConfig = {
+const firebaseConfigDefault = {
 	apiKey: "AIzaSyCkfExCT4AEV9tZjCBtp87pkq9eoSClH2k",
 	authDomain: "portfolio-5a465.firebaseapp.com",
-	databaseURL: "https://portfolio-5a465-default-rtdb.europe-west1.firebasedatabase.app",
+	databaseURL: "https://portfolio-5a465-default-rtdb.europe-west1.firebasedatabase.app/",
 	projectId: "portfolio-5a465",
 	storageBucket: "portfolio-5a465.appspot.com",
 	messagingSenderId: "667078575873",
@@ -19,29 +16,14 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const initializeAppDefault = initializeApp(firebaseConfigDefault, 'default');
 // Get a reference to the database service
-const database = getDatabase(app);
+const databaseDefault = getDatabase(initializeAppDefault);
+//const dbRefThoughts = ref(getDatabase(initializeAppThoughts));
 
-const dbRef = ref(getDatabase());
-get(child(dbRef, `/`)).then((snapshot) => {
-	if (snapshot.exists()) {
-		console.log(snapshot.val());
-	} else {
-		console.log("No data available");
-	}
-}).catch((error) => {
-	console.error(error);
-});
+const exports = {
+	databaseDefault,
+	initializeAppDefault
+}
 
-// function writeUserData(userId, name, email, imageUrl) {
-// 	const db = getDatabase();
-// 	set(ref(db, 'boohoo/' + userId), {
-// 		username: name,
-// 		email: email,
-// 		profile_picture : imageUrl
-// 	});
-// }
-// writeUserData("testUserID1", "testName", "testEmail", "testImageURL");
-
-export default database; // Don’t forget to use export default!
+export default exports; // Don’t forget to use export default!

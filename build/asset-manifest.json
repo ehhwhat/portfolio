@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.279b0e52.css",
-    "main.js": "/static/js/main.a76121fa.js",
+    "main.js": "/static/js/main.853f4103.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
     "static/media/audleyvillages.jpg": "/static/media/audleyvillages.d25992d9604310a208a8.jpg",
     "static/media/me_sad.png": "/static/media/me_sad.a1fc63de07c4ff966667.png",
@@ -33,6 +33,7 @@
     "static/media/icaew2.jpg": "/static/media/icaew2.fac0d8263a0069077ced.jpg",
     "static/media/me_square.jpg": "/static/media/me_square.dd7e60c643327fedf959.jpg",
     "static/media/TheDrownedWorld.jpg": "/static/media/TheDrownedWorld.168e9b5de9e2cd8d4002.jpg",
+    "static/media/login.jpg": "/static/media/login.6390ddac25c46e9d3ff8.jpg",
     "static/media/gcas3.jpg": "/static/media/gcas3.08594043d55f8f407b84.jpg",
     "static/media/caseICAEW.jpg": "/static/media/caseICAEW.e9f1e235dca1dad6381e.jpg",
     "static/media/ShackletonsBoatJourney.jpg": "/static/media/ShackletonsBoatJourney.232bfad15c7906fa2809.jpg",
@@ -138,11 +139,11 @@
     "static/media/html.svg": "/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "static/media/js.svg": "/static/media/js.61c1fa6b2ee4eb8ce8d0e0c25ab67854.svg",
     "main.279b0e52.css.map": "/static/css/main.279b0e52.css.map",
-    "main.a76121fa.js.map": "/static/js/main.a76121fa.js.map",
+    "main.853f4103.js.map": "/static/js/main.853f4103.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.279b0e52.css",
-    "static/js/main.a76121fa.js"
+    "static/js/main.853f4103.js"
   ]
 }
