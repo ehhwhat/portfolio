@@ -44,7 +44,6 @@ class App extends Component {
                                 <ul className="">
                                     <li className=""><NavLink to="/AppStyletile">Styletile</NavLink></li>
                                     <li className=""><NavLink to="/AppComponents">Components</NavLink></li>
-                                    <li className=""><strike>Example app/demo page</strike></li>
                                 </ul></div>}
                         />
                         <TextImage
@@ -87,6 +86,7 @@ class App extends Component {
                                 <NavLink className={'btn btn-danger mb-4'} to="/AppCases">Case studies overview</NavLink>
                                 <p><strong>Direct links</strong></p>
                                 <ul className="">
+                                    <li><NavLink to="/AppCaseStadion">Stadion</NavLink></li>
                                     <li><NavLink to="/AppCaseEngine">Engine UK</NavLink></li>
                                     <li><NavLink to="/AppCaseVersantus">Versantus</NavLink></li>
                                     <li><NavLink to="/AppCaseICAEW2">ICAEW 2</NavLink></li>

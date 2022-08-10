@@ -7,7 +7,8 @@ import caseMerchantcantos from "./assets/img/clients/merchantcantos/caseMerchant
 import caseICAEW from "./assets/img/clients/icaew/caseICAEW.jpg";
 import caseCashPlus from "./assets/img/clients/cashplus/caseCashPlus.jpg";
 import caseHomeserveUSA from "./assets/img/clients/homeserveusa/caseHomeserveUSA.jpg";
-import caseHomeserve from "./assets/img/clients/homeserve/caseHomeserve.jpg"
+import caseHomeserve from "./assets/img/clients/homeserve/caseHomeserve.jpg";
+import caseStadion from "./assets/img/clients/stadion/caseStadion.jpg";
 import TextImage from "./components/TextImage";
 import {NavLink} from "react-router-dom";
 
@@ -17,6 +18,17 @@ function AppCases() {
             <main className={'bg-light'}>
                 <div className={'container px-xs-0'}>
                     <Jumbotron heading={'Case Studies'} subHeading={'Who I have worked with'} />
+                    <TextImage
+                        backgroundImage={caseStadion}
+                        heading={'Stadion'}
+                        slideEffect={true}
+                        altLayout={true}
+                        content={(<div>
+                                <p>Updated existing modules and components as well as creating brand new ones to use across the Paris Saint-Germain F.C. website, alongside this fixing bugs and also implemented a site wide custom Google Tracking plan.</p>
+                                <NavLink className={'btn btn-danger'} to="/AppCaseStadion">Stadion</NavLink>
+                            </div>
+                        )}
+                    />
                     <TextImage
                         backgroundImage={caseEngine}
                         heading={'Engine UK'}

@@ -5,15 +5,28 @@ import ImgMerchantcantosLogo from "../img/clients/merchantcantos/logo.jpg";
 import ImgCashplusLogo from "../img/clients/cashplus/logo.jpg";
 import ImgHomeserveLogo from "../img/clients/homeserve/logo.jpg";
 import ImgNpowerLogo from "../img/clients/npower/logo.jpg";
+import ImgStadionLogo from "../img/clients/stadion/logo.png";
 
 const DataExperiences = [
+  {
+    'role':'Front end web developer',
+    'client':'Stadion',
+    'location':'Remote / London',
+    'dates':'05/2022 - 08/2022',
+    'logo':ImgStadionLogo,
+    'bootstrapColor':'',
+    'content':`
+      <div>
+          <p>Updated existing modules and components as well as creating brand new ones to use across the Paris Saint-Germain F.C. website, alongside this fixing bugs and also implemented a site wide custom Google Tracking plan.</p>
+      </div>`,
+  },
   {
     'role':'Front end web developer',
     'client':'Engine UK',
     'location':'Remote / London',
     'dates':'09/2021 - 12/2021',
     'logo':ImgEngineLogo,
-    'bootstrapColor':'bg-white',
+    'bootstrapColor':'',
     'content':`
       <div>
           <p>Worked on optimizing the Front End for both the bespoke GCAS (Global Communications Academy System) Booking System and the themable edX build. The edX system allows staff to book onto online learning courses (e.g Digital Communications) both in the UK or abroad. The GCAS booking system was created to allow Cabinet Office staff to create new courses, track users, track completion etc. Built using Bootstrap for the Front End with a mix of HTML, CSS (SASS) and JavaScript within an Agile working environment.</p>
@@ -25,7 +38,7 @@ const DataExperiences = [
     'location':'Remote / Oxford',
     'dates':'08/2021 - 09/2021',
     'logo':ImgVersantusLogo,
-    'bootstrapColor':'bg-white',
+    'bootstrapColor':'',
     'content':`
       <div>
         <p>Working across a number of the agency's client websites built using Drupal, developing new components and modules to be used by clients with HTML, CSS and JS as well as refactoring or fixing older code, ensuring better coding and accessibility standards along the way.</p>
@@ -37,7 +50,7 @@ const DataExperiences = [
     'location':'Milton Keynes',
     'dates':'04/2019 - 01/2021',
     'logo':ImgICAEWLogo,
-    'bootstrapColor':'bg-light',
+    'bootstrapColor':'',
     'content':`<div><p>Upgraded website from Foundation 5 to 6 and setup processes and documentation to support this going forward. Used the newer Foundation 5 framework to complete a website rebuild and redesign project encompassing hundreds of HTML components (accordions, responsive images, standout texts etc) and dozens of page templates (homepage, events, products etc) using Handlebars.js as a templating engine.</p><p>Skills used included standard HTML markup (using Foundation framework) alongside CSS (SASS with BEM), TFS was the chosen source control system and we used Gulp for task automation. This role also involved a huge amount of documentation so the process could be continued without me.</p></div>`,
   },
   {
@@ -46,6 +59,7 @@ const DataExperiences = [
     'location':'London',
     'dates':'02/2019 - 03/2019',
     'logo':ImgMerchantcantosLogo,
+    'bootstrapColor':'',
     'color':'#1ed8d7',
     'content':`<div><p>Upgraded website from Foundation 5 to 6 and setup processes and documentation to support this going forward. Used the newer Foundation 5 framework to complete a website rebuild and redesign project encompassing hundreds of HTML components (accordions, responsive images, standout texts etc) and dozens of page templates (homepage, events, products etc) using Handlebars.js as a templating engine.</p><p>Skills used included standard HTML markup (using Foundation framework) alongside CSS (SASS with BEM), TFS was the chosen source control system and we used Gulp for task automation. This role also involved a huge amount of documentation so the process could be continued without me.</p></div>`,
   },
@@ -55,7 +69,7 @@ const DataExperiences = [
     'location':'Milton Keynes',
     'dates':'08/2018 - 12/2018',
     'logo':ImgICAEWLogo,
-    'bootstrapColor':'bg-white',
+    'bootstrapColor':'',
     'content':`<div><p>Worked on 2 major projects for the new Universal Header and Unified Search.  Universal Header aim was to ensure all ICAEW sites had the same header/branding to make them more uniform. Some of these sites were in house and some external, also a mix of Sitecore CMS implementations and static Dot Net websites. My role was to build all the content components and modules to appear inside the header dropdowns, to create all the animation functionality and navigation between the header levels. This was a massive project which took months to build and implement, the header was incredibly complex in places and there were two front end devs working on different parts which then required integration, this then needed to be added to Sitecore.</p><p>Unified Search was the integration project for Coveo site search within Sitecore CMS, also linked to Universal Header as one of the dropdowns would be using Coveo, I also had to build the new components and modules required for updated search results and no results page.</p><p>As part of my role here I also improved how the team used HTML templating which meant they could reuse a lot more code than before and could stop copying and pasting pages for even the slightest of tweaks. I also worked on a lot of documentation for both of these major projects to help with build and implementation.</p><p>Skills used included standard HTML markup (using Foundation framework) alongside CSS (SASS with BEM), TFS was the chosen source control system and we used Gulp for task automation.</p></div>`,
   },
   {
@@ -64,7 +78,7 @@ const DataExperiences = [
     'location':'London',
     'dates':'03/2018 - 06/2018',
     'logo':ImgCashplusLogo,
-    'bootstrapColor':'bg-white',
+    'bootstrapColor':'',
     'content':`<div><p>Front End UI for Transaction Enrichment project. The project aim was to create an improved view of transactions which included more merchant data, categorisation, tagging, spending insights etc. My role was to take the existing Front End for the less rich versions of these pages (statements and details) and add new markup and styles to accommodate the new and improved data we would be showing. A whole new UI for details was needed as well as new pages for Categorisation Management and Spending Insights.</p><p>Skills used included standard HTML markup (using Bootstrap framework) alongside CSS (LESS), JS and jQuery, SVN was the chosen source control and all was built using Visual Studio. Working alongside BA, PM, Back end devs (both internal and external).</p></div>`,
   },
   {
@@ -73,6 +87,7 @@ const DataExperiences = [
     'location':'London',
     'dates':'05/2016 - 12/2017',
     'logo':ImgHomeserveLogo,
+    'bootstrapColor':'',
     'color':'white',
     'content':`
       <div>
@@ -92,6 +107,7 @@ const DataExperiences = [
     'location':'Walsall',
     'dates':'05/2014 - 05/2016',
     'logo':ImgHomeserveLogo,
+    'bootstrapColor':'',
     'color':'white',
     'content':`
       <div>
@@ -114,7 +130,7 @@ const DataExperiences = [
     'location':'Solihull',
     'dates':'06/2011 - 04/2014',
     'logo':ImgNpowerLogo,
-    'bootstrapColor':'bg-white',
+    'bootstrapColor':'',
     'content':`
       <div>
         <p>Recoded most of the npower.com website, built templates not only for developer use but also for business owners to contribute content. Created microsites, worked on responsive templates, mobile-only layouts, implemented a knowledge base system which was then also used for live chat functionality across npower.com. </p>
@@ -136,7 +152,7 @@ const DataExperiences = [
     'location':'Worcester',
     'dates':'10/2007 - 06/2011',
     'logo':ImgNpowerLogo,
-    'bootstrapColor':'bg-white',
+    'bootstrapColor':'',
     'content':`<div><p>Worked on hundreds of landing pages for various campaigns, also worked on major projects including refreshes of the npower.com website.</p></div>`,
   },
   {

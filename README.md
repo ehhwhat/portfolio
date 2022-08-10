@@ -72,3 +72,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Useful links
 * https://www.techomoro.com/how-to-create-a-multi-page-website-with-react-in-5-minutes/
 * https://medium.com/how-to-react/different-ways-to-loop-through-arrays-and-objects-in-react-39bcd870ccf
+
+
+# Project
+Built using **React** with **create-react-app** to showcase my CV, client work and code demo's or projects. Using **Firebase** to deploy and host data and **Github** as source control. Styles based on **Bootstrap**.
+
+## To run locally
+Navigate to parent folder and run `npm start`.\
+If there is an issue with this make sure you are using the latest Node and NPM for create-react-app.\
+
+## Branching
+Live website points to code within the `master` branch, branch from this for any updates then push and merge back to `master` via a **Pull Request**, this process will kick off automatic **Actions** for deploy to live process.
+
+## To add a new page
+**Such as a case study**
+* In `src` create a new .js file with your page (e.g AppCaseClientName.js), this is the file which will contain all the specific page information and code
+* You then need to add a link to your new page on the homepage so you can navigate to it. This is done by adding a link to the specific area on the `App.js` file
+* As we are using a **React Router** to move between pages we need to reference our new page on `index.js` in the list of **Route Paths** after **importing** the new page at top of file
+* To add the content to your new page you need to create a specific data source under `assets > data > dataCaseClientName.js` and then make sure all the references to it are correct on your new page
+* Viewing an existing page will help with this

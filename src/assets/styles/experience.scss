@@ -1,6 +1,7 @@
 // blank
 .experience{
   position: relative;
+  background:white!important;
   &__heading {
     display: block;
     width:100%;
@@ -11,6 +12,10 @@
   }
   &__logo2 {
     width: 96px;
+  }
+  &:nth-child(4n+2),
+  &:nth-child(4n+3) {
+    background:#eee!important;
   }
 }
 
