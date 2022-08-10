@@ -62,6 +62,7 @@ class App extends Component {
                                     <li className=""><NavLink to="/AppRaces">Races</NavLink></li>
                                     <li className=""><NavLink to="/AppNetflixRaces">Netflix Races</NavLink></li>
                                     <li className=""><NavLink to="/AppTriathlons">Triathlons</NavLink></li>
+                                    <li className="d-none"><NavLink to="/AppBabyTracker">Baby Tracker</NavLink></li>
                                 </ul></div>}
                         />
                         <TextImage
