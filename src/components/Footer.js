@@ -28,6 +28,11 @@ class Footer extends Component {
                             </NavLink>
                         </li>
                     </ul>
+                    <ul className="list-inline my-0">
+                        <li className="list-inline-item">
+                            <i className="bi bi-info-square-fill text-warning"></i> Last update: Added Stadion case study
+                        </li>
+                    </ul>
                 </div>
             </footer>
         );

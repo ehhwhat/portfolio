@@ -95,17 +95,17 @@
   transition: all 0.25s;
 }
 
-body .bg-light {
-  background-color: #eee!important;
-}
-
-body .bg-dark-2 {
-  background-color: #888!important;
-}
-
-body .bg-danger--dark {
-  background-color: #880E4F!important;
-}
+// Colours
+body .bg-light {background-color: #eee!important;}
+body .bg-dark-2 {background-color: #888!important;}
+body .bg-danger--dark {background-color: #880E4F!important;}
+//body .bg-stadion {background-color: white!important;}
+//body .bg-engine {background-color: white!important;}
+//body .bg-versantus {background-color: white!important;}
+//body .bg-icaew {background-color: #8DD0E3!important;}
+//body .bg-merchantcantos {background-color: #1ED8D7!important;}
+//body .bg-homeserve {background-color: white!important;}
+//body .bg-npower {background-color: white!important;}
 
 main {
   overflow: auto;
