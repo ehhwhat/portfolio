@@ -73,16 +73,16 @@ class AppCaseAll extends Component {
         let otherLocation = data['other']['location'];
         let otherLinkText = data['other']['link']['text'];
         let otherLinkURL = data['other']['link']['url'];
-        let otherLink2Text = null;
-        let otherLink2URL = null;
-        if (data['other']['link2']) {
-            if (data['other']['link2']['text']) {
-                otherLink2Text = data['other']['link2']['text'];
-            }
-            if (data['other']['link2']['url']) {
-                otherLink2URL = data['other']['link2']['url'];
-            }
-        }
+        //let otherLink2Text = null;
+        //let otherLink2URL = null;
+        // if (data['other']['link2']) {
+        //     if (data['other']['link2']['text']) {
+        //         //otherLink2Text = data['other']['link2']['text'];
+        //     }
+        //     if (data['other']['link2']['url']) {
+        //         //otherLink2URL = data['other']['link2']['url'];
+        //     }
+        // }
 
         return (
             <div className="App">
