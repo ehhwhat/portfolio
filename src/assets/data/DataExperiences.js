@@ -1,11 +1,11 @@
-import ImgEngineLogo from "../img/clients/engine/logo.jpg";
-import ImgVersantusLogo from "../img/clients/versantus/logo.jpg";
+import ImgEngineLogo from "../img/clients/engine/engineLogo.jpg";
+import ImgVersantusLogo from "../img/clients/versantus/versantusLogo.jpg";
 import ImgICAEWLogo from "../img/clients/icaew/logo.jpg";
 import ImgMerchantcantosLogo from "../img/clients/merchantcantos/logo.jpg";
 import ImgCashplusLogo from "../img/clients/cashplus/logo.jpg";
 import ImgHomeserveLogo from "../img/clients/homeserve/logo.jpg";
 import ImgNpowerLogo from "../img/clients/npower/logo.jpg";
-import ImgStadionLogo from "../img/clients/stadion/logo.png";
+import ImgStadionLogo from "../img/clients/stadion/stadionLogo.png";
 
 const DataExperiences = [
   {

@@ -1,6 +1,6 @@
 import Img1 from "../img/clients/versantus/versantus.jpg";
-import Img2 from "../img/clients/versantus/audleyvillages.jpg";
-import Img3 from "../img/clients/versantus/allegracare.jpg";
+import Img2 from "../img/clients/versantus/versantusAudleyvillages.jpg";
+import Img3 from "../img/clients/versantus/versantusAllegracare.jpg";
 
 const DataCaseEngine = [
   {

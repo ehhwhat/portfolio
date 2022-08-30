@@ -1,6 +1,6 @@
-import Img1 from "../img/clients/engine/gcas1.jpg";
-import Img2 from "../img/clients/engine/gcas2.jpg";
-import Img3 from "../img/clients/engine/gcas3.jpg";
+import Img1 from "../img/clients/engine/engineGCAS1.jpg";
+import Img2 from "../img/clients/engine/engineGCAS2.jpg";
+import Img3 from "../img/clients/engine/engineGCAS3.jpg";
 
 const DataCaseEngine = [
   {

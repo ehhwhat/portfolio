@@ -11,7 +11,7 @@ const DataCaseHomeserve = [
                 <p>To wireframe (Axure), design (Photoshop) and build (HTML, CSS, Jquery) prototypes and front end code to be used in conjunction with SiteCore CMS on HomeServe.com or their company Intranet.</p>
             </div>`,
     'other': {
-      'dates':'May 2014 - April 2016. 2years',
+      'dates':'May 2014 - April 2016. 2 years',
       'location':'London',
       'link': {
         'url':'https://www.homeserve.com/',

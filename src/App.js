@@ -86,6 +86,7 @@ class App extends Component {
                                 <NavLink className={'btn btn-danger mb-4'} to="/AppCases">Case studies overview</NavLink>
                                 <p><strong>Direct links</strong></p>
                                 <ul className="">
+                                    <li><NavLink to="/AppCaseAll">All</NavLink></li>
                                     <li><NavLink to="/AppCaseStadion">Stadion</NavLink></li>
                                     <li><NavLink to="/AppCaseEngine">Engine UK</NavLink></li>
                                     <li><NavLink to="/AppCaseVersantus">Versantus</NavLink></li>

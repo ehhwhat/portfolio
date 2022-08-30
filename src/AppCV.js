@@ -128,9 +128,11 @@ function AppCV() {
                             heading={'Interests'}
                             bgColour={'bg-dark'}
                             textColour={'text-white'}
-                            content={<div><p>I am rather obsessed with exercising and doing any kind of activity whether that's the gym, football, cycling or golf. I am also a member of a running club and have started doing triathlons and am working towards my first Ironman 70.3 event. During the working commute, I tend to read quite a lot and focus on either science fiction books (lots of Philip K Dick, big fan of 1984, Fahrenheit 451 etc) or ancient history ones (Rome, the Greek gods etc).</p>
-                                <p>I also maintain my own personal website showcasing my work and occasionally writing the odd development based blog post which you can find here http://www.ehhwhat.co.uk, where I tend to write about recent project work or smaller personal projects.
-                                </p></div>}
+                            content={<div>
+                                <p>I am rather obsessed with exercising and doing any kind of activity whether that's the gym, football, cycling or golf. I am also a member of a local running club and tend to do a lot of triathlons each year. When commuting to an office I tend to read quite a lot and focus on either science fiction books (lots of Philip K Dick, big fan of 1984, Fahrenheit 451 etc) or ancient history ones (Rome, the Greek gods etc).</p>
+                                <p>I also maintain my own personal website showcasing my work and occasionally writing the odd development based blog post which you can find here https://portfolio-5a465.web.app/, where I tend to write about recent project work or smaller personal projects.
+                                </p>
+                        </div>}
                         >
                         </TextBlock>
                     </section>
