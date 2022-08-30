@@ -6,6 +6,7 @@ import AppStyletile from './AppStyletile';
 import AppComponents from './AppComponents';
 import AppCV from './AppCV';
 import AppCaseStadion from './AppCaseStadion';
+import AppCaseAll from './AppCaseAll';
 import AppCaseEngine from './AppCaseEngine';
 import AppCaseVersantus from './AppCaseVersantus';
 import AppCaseICAEW2 from './AppCaseICAEW2';
@@ -42,6 +43,7 @@ ReactDOM.render(
               <Route path="/AppComponents" element={<AppComponents />} />
               <Route path="/AppCV" element={<AppCV />} />
               <Route path="/AppCaseStadion" element={<AppCaseStadion />} />
+              <Route path="/AppCaseAll" element={<AppCaseAll />} />
               <Route path="/AppCaseEngine" element={<AppCaseEngine />} />
               <Route path="/AppCaseVersantus" element={<AppCaseVersantus />} />
               <Route path="/AppCaseICAEW2" element={<AppCaseICAEW2 />} />

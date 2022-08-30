@@ -1,6 +1,6 @@
-import Img1 from "../img/clients/icaew/ux.icaew.com2.png";
-import Img2 from "../img/clients/icaew/www.icaew.com.png";
-import Img3 from "../img/clients/icaew/ux.icaew.com_styles-typography.png";
+import Img1 from "../img/clients/icaew/icaew21.jpg";
+import Img2 from "../img/clients/icaew/icaew22.jpg";
+import Img3 from "../img/clients/icaew/icaew23.jpg";
 
 const DataCaseICAEW2 = [
   {

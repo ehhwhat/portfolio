@@ -1,6 +1,6 @@
-import Img1 from "../img/clients/stadion/homepageTop.jpg";
-import Img2 from "../img/clients/stadion/homepageBottom.jpg";
-import Img3 from "../img/clients/stadion/dynamicContentWidget.jpg";
+import Img1 from "../img/clients/stadion/stadionHomepageTop.jpg";
+import Img2 from "../img/clients/stadion/stadionHomepageBottom.jpg";
+import Img3 from "../img/clients/stadion/stadionDynamicContentWidget.jpg";
 
 const DataCaseStadion = [
   {
