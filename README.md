@@ -1,3 +1,40 @@
+<br>
+
+![](https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/setting-64.png)
+***
+***
+***
+
+# It's been a while, how to get back up and running
+
+## Pre:
+Install these first
+* Git
+* Node & NPM
+* Terminal
+* IDE
+
+## Check versions using Terminal:
+A simple way to check they have been installed, actual version should not matter.
+* git -v
+* node -v
+* npm -v
+
+## Get code:
+Repo = **Playground**, clone the repo to wherever you want.
+
+## Run code:
+* npm install
+* npm audit fix
+* npm start
+
+<br>
+
+![](https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/react-64.png)
+***
+***
+***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,13 +110,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * https://www.techomoro.com/how-to-create-a-multi-page-website-with-react-in-5-minutes/
 * https://medium.com/how-to-react/different-ways-to-loop-through-arrays-and-objects-in-react-39bcd870ccf
 
+<br>
+
+![](https://cdn1.iconfinder.com/data/icons/unicons-line-vol-2/24/code-branch-64.png)
+***
+***
+***
 
 # Project
 Built using **React** with **create-react-app** to showcase my CV, client work and code demo's or projects. Using **Firebase** to deploy and host data and **Github** as source control. Styles based on **Bootstrap**.
 
 ## To run locally
 Navigate to parent folder and run `npm start`.\
-If there is an issue with this make sure you are using the latest Node and NPM for create-react-app.\
+If there is an issue with this make sure you are using the latest Node and NPM for create-react-app.
 
 ## Branching
 Live website points to code within the `master` branch, branch from this for any updates then push and merge back to `master` via a **Pull Request**, this process will kick off automatic **Actions** for deploy to live process.
