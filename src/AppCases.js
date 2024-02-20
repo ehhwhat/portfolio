@@ -9,6 +9,7 @@ import caseCashPlus from "./assets/img/clients/cashplus/caseCashPlus.jpg";
 import caseHomeserveUSA from "./assets/img/clients/homeserveusa/caseHomeserveUSA.jpg";
 import caseHomeserve from "./assets/img/clients/homeserve/caseHomeserve.jpg";
 import caseStadion from "./assets/img/clients/stadion/caseStadion.jpg";
+import caseValtech from "./assets/img/clients/valtech/caseValtech.jpg";
 import TextImage from "./components/TextImage";
 import {NavLink} from "react-router-dom";
 
@@ -18,6 +19,21 @@ function AppCases() {
             <main className={'bg-light'}>
                 <div className={'container px-xs-0'}>
                     <Jumbotron heading={'Case Studies'} subHeading={'Who I have worked with'} />
+                    <TextImage
+                        backgroundImage={caseValtech}
+                        heading={'Valtech'}
+                        slideEffect={true}
+                        altLayout={false}
+                        content={(<div>
+                                <p>Whilst working with one of Valtech's clients my role as a Front End Web Developer
+                                    within multiple teams, across multiple regions was to reskin their existing website
+                                    using the latest brand guidelines. I also worked on huge user experience changes
+                                    throughout the Product Purchase journey as well as adding new components and
+                                    functionality to existing sites.</p>
+                                <NavLink className={'btn btn-danger'} to="/AppCaseValtech">Valtech</NavLink>
+                            </div>
+                        )}
+                    />
                     <TextImage
                         backgroundImage={caseStadion}
                         heading={'Stadion'}
