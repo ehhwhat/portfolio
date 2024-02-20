@@ -12,7 +12,7 @@ const DataCaseValtech = [
             </div>`,
     'detailed':`
             <div>
-                <p>Initially tasked with updating the existing Product Purchase journey to improve the user experience throughout alongside usual bug fixing and enhancements, this aspect grew larger and larger as more work was completed, the underlying code, logic etc was incredibly complex having to adjust specific aspects depending on language, region, type or type of user. Following this I helped worked on a reskin of the overall website to try and bring up to date with latest brand guidelines, this meant having to work with much older code in places which had its own complexities to get around.</p>
+                <p>Initially tasked with updating the existing Product Purchase journey to improve the user experience throughout alongside usual bug fixing and enhancements, this aspect grew larger and larger as more work was completed, the underlying code, logic etc was incredibly complex having to adjust specific aspects depending on language, region, or type of user. Following this I helped worked on a reskin of the overall website to try and bring up to date with latest brand guidelines, this meant having to work with much older code in places which had its own complexities to get around.</p>
                 <p>My final project was as part of a small team to add Login functionality to a brand site and then build the requisite components needed for when the user has logged in, show products purchased, address details etc.</p>
             </div>`,
     'other': {

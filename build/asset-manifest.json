@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f6c6ec6.css",
-    "main.js": "/static/js/main.526510ed.js",
+    "main.js": "/static/js/main.5d6ebfe4.js",
     "static/js/592.602691d4.chunk.js": "/static/js/592.602691d4.chunk.js",
     "static/media/icaew22.jpg": "/static/media/icaew22.92ff88d1482c70a06a09.jpg",
     "static/media/versantusAudleyvillages.jpg": "/static/media/versantusAudleyvillages.d25992d9604310a208a8.jpg",
@@ -155,11 +155,11 @@
     "static/media/html.svg": "/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "static/media/js.svg": "/static/media/js.61c1fa6b2ee4eb8ce8d0e0c25ab67854.svg",
     "main.4f6c6ec6.css.map": "/static/css/main.4f6c6ec6.css.map",
-    "main.526510ed.js.map": "/static/js/main.526510ed.js.map",
+    "main.5d6ebfe4.js.map": "/static/js/main.5d6ebfe4.js.map",
     "592.602691d4.chunk.js.map": "/static/js/592.602691d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f6c6ec6.css",
-    "static/js/main.526510ed.js"
+    "static/js/main.5d6ebfe4.js"
   ]
 }
