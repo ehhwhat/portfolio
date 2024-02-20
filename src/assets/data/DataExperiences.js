@@ -6,8 +6,21 @@ import ImgCashplusLogo from "../img/clients/cashplus/logo.jpg";
 import ImgHomeserveLogo from "../img/clients/homeserve/logo.jpg";
 import ImgNpowerLogo from "../img/clients/npower/logo.jpg";
 import ImgStadionLogo from "../img/clients/stadion/stadionLogo.png";
+import ImgValtechLogo from "../img/clients/valtech/valtechLogo.png";
 
 const DataExperiences = [
+  {
+    'role':'Front end web developer',
+    'client':'Valtech',
+    'location':'Remote / Denmark',
+    'dates':'07/2022 - 01/2024',
+    'logo':ImgValtechLogo,
+    'bootstrapColor':'',
+    'content':`
+      <div>
+          <p>Whilst working with one of Valtech's clients my role as a Front End Web Developer within multiple teams, across multiple regions was to reskin their existing website using the latest brand guidelines. I also worked on huge user experience changes throughout the Product Purchase journey as well as adding new components and functionality to existing sites.</p>
+      </div>`,
+  },
   {
     'role':'Front end web developer',
     'client':'Stadion',

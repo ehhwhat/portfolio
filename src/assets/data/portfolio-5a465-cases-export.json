@@ -1,0 +1,346 @@
+{
+  "DataCaseCashplus": [
+    {
+      "client": "Cashplus",
+      "detailed": "<div><p>Front End UI for Transaction Enrichment project. The project aim was to create an improved view of transactions which included more merchant data, categorisation, tagging, spending insights etc. My role was to take the existing Front End for the less rich versions of these pages (statements and details) and add new markup and styles to accommodate the new and improved data we would be showing. A whole new UI for details was needed as well as new pages for Categorisation Management and Spending Insights.</p><p>Skills used included standard HTML markup (using Bootstrap framework) alongside CSS (LESS), JS and jQuery, SVN was the chosen source control and all was built using Visual Studio. Working alongside BA, PM, Back end devs (both internal and external).</p></div>",
+      "images": {
+        "image1": "static/media/cashplus1.30bc561efd9a1b4d770f.jpg",
+        "image2": "static/media/cashplus2.6af390b0e7fd5d67fdd9.jpg",
+        "image3": "static/media/cashplus2.6af390b0e7fd5d67fdd9.jpg"
+      },
+      "other": {
+        "dates": "March 2018 - August 2018. 6 months",
+        "link": {
+          "text": "Cashplus",
+          "url": "https://www.cashplus.com/"
+        },
+        "location": "London"
+      },
+      "role": "UI Developer",
+      "summary": "<div><p>To build UI's for 2 new large projects for future customer interactions. Standard HTML, CSS and JS within a DotNet world, sometimes working with KnockoutJS or Angular.</p></div>",
+      "tech": {
+        "bootstrap": false,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": false,
+        "github": false,
+        "grunt": false,
+        "gulp": false,
+        "handlebars": false,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseEngine": [
+    {
+      "client": "Engine UK",
+      "detailed": "<div><p>Worked on optimizing the Front End for both the bespoke GCAS (Global Communications Academy System) Booking System and the themable edX build. The edX system allows staff to book onto online learning courses (e.g Digital Communications) both in the UK or abroad. The GCAS booking system was created to allow Cabinet Office staff to create new courses, track users, track completion etc. Built using Bootstrap for the Front End with a mix of HTML, CSS (SASS) and JavaScript within an Agile working environment.</p><p>The biggest issue with the build was that the Front End had been started before I arrived to try and optimise and tidy up, I also didnt have access to Bootstraps src files in order to make a lot of the updates and for anything required within the edX system we couldn't very easily update the HTML, so the approach was to do as much as possible with the existing markup.</p><p>Also created HTML emails for users who sign up for a course, complete a course, unenroll etc, created through Mailchimp, as well as a PDF certificate which needed to be printable.</p></div>",
+      "images": {
+        "image1": "static/media/engineGCAS1.428945d5585eca82c7d8.jpg",
+        "image2": "static/media/engineGCAS2.fba681caadad9a85e8b9.jpg",
+        "image3": "static/media/engineGCAS3.08594043d55f8f407b84.jpg"
+      },
+      "other": {
+        "dates": "September 2021 - December 2021. 4 months",
+        "link": {
+          "text": "Engine UK",
+          "url": "https://www.enginegroup.com/uk/"
+        },
+        "location": "Remote"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>To optimise / improve / tidy up the partially built Front End for a bespoke built GCAS system and a themeable system built on edX.</p></div>",
+      "tech": {
+        "bootstrap": true,
+        "docker": true,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": true,
+        "github": true,
+        "grunt": false,
+        "gulp": false,
+        "handlebars": false,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseHomeserve": [
+    {
+      "client": "Homeserve",
+      "detailed": "<div><p>To wireframe (Axure), design (Photoshop) and build (HTML, CSS, Jquery) prototypes and front end code to be used in conjunction with SiteCore CMS on HomeServe.com or their company Intranet.</p></div>",
+      "images": {
+        "image1": "static/media/homeserve1.b1dc0c39d5173c1805fd.jpg",
+        "image2": "static/media/homeserve2.dbf036559da14dc8c85d.jpg",
+        "image3": "static/media/homeserve2.dbf036559da14dc8c85d.jpg"
+      },
+      "other": {
+        "dates": "May 2014 - April 2016. 2 years",
+        "link": {
+          "text": "Homeserve",
+          "url": "https://www.homeserve.com/uk"
+        },
+        "location": "Birmingham"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>To wireframe (Axure), design (Photoshop) and build (HTML, CSS, Jquery) prototypes and front end code to be used in conjunction with SiteCore CMS on HomeServe.com or their company Intranet.</p></div>",
+      "tech": {
+        "bootstrap": true,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": false,
+        "github": false,
+        "grunt": true,
+        "gulp": false,
+        "handlebars": false,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseHomeserveUSA": [
+    {
+      "client": "Homeserve USA",
+      "detailed": "<div><p>Working for Global Digital Team on specific projects across territories such as UK, USA and Spain.</p></div>",
+      "images": {
+        "image1": "static/media/homeserveusa1.1d83219bc7f1e907717f.jpg",
+        "image2": "static/media/homeserveusa2.53cbfa9811aa3bb5b304.jpg",
+        "image3": "static/media/homeserveusa3.d86b7b317d717ebfb5cd.jpg"
+      },
+      "other": {
+        "dates": "April 2016 - December 2017. 1 year 9 months",
+        "link": {
+          "text": "Homeserve USA",
+          "url": "https://www.homeserve.com/"
+        },
+        "location": "London"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>Working for Global Digital Team on specific projects across territories such as UK, USA and Spain.</p></div>",
+      "tech": {
+        "bootstrap": true,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": true,
+        "github": false,
+        "grunt": false,
+        "gulp": false,
+        "handlebars": true,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseICAEW": [
+    {
+      "client": "ICAEW",
+      "detailed": "<div><p>Worked on 2 major projects for new Universal Header and Unified Search. Universal Header aim was to ensure all ICAEW sites had the same header/branding to make them more uniform. Some of these sites were in house and some external, also a mix of Sitecore CMS implementations and static Dot Net websites. My role was to build all the content components and modules to appear inside the header dropdowns, to create all the animation functionality and navigation between the header levels. This was a massive project which took months to build and implement, the header was incredibly complex in places and there were two front end devs working on different parts which then required integration, this then needed to be added to Sitecore.</p><p>Unified Search was the integration project for Coveo site search within Sitecore CMS, the also linked to Universal Header as one of the dropdowns would be using Coveo, I also had to build the new components and modules required for updated search results and no results page.</p><p>As part of my role here I also improved how the team used HTML templating which meant they could reuse a lot more code than before and could stop copying and pasting pages for even the slightest of tweaks. I also worked on a lot of documentation for both of these major projects to help with build and implementation.</p><p>Skills used included standard HTML markup (using Foundation framework) alongside CSS (SASS with BEM), TFS was the chosen source control system and we used Gulp for task automation.</p></div>",
+      "images": {
+        "image1": "static/media/icaew1.0c584d787a54892bb504.jpg",
+        "image2": "static/media/icaew2.fac0d8263a0069077ced.jpg",
+        "image3": "static/media/icaew3.5bce3f71b1884b79c444.jpg"
+      },
+      "other": {
+        "dates": "August 2018 - December 2018. 5 months",
+        "link": {
+          "text": "ICAEW",
+          "url": "https://www.icaew.com/"
+        },
+        "location": "Remote / Milton Keynes"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>Front end development on 2 large projects, to be used and seen across the whole of the ICAEW website, Universal Header and Unified Search.</p></div>",
+      "tech": {
+        "bootstrap": false,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": true,
+        "git": false,
+        "github": false,
+        "grunt": false,
+        "gulp": true,
+        "handlebars": false,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseICAEW2": [
+    {
+      "client": "ICAEW",
+      "detailed": "<div><p>The current website was now using an out of date Foundation Framework version and built on tech a few years out of date. My role was to set up and build the newly designed website using the latest Foundation Framework version but to also install a new way of working/building front end code based around Componentization. This meant each item we needed (templates, layouts, components etc) were all siloed and could be built, updated, removed etc in isolation making for a much safer front end development environment.</p><p>This change led to new items being delivered to the Content Editors on a more regular basis, it meant testing could be completed quicker and easier, developers could work alongside each other a lot easier due to less to no code conflicts as well.</p><p>A secondary part of this contract was to document this new way of working and to document the new visual system that the designers had created.</p></div>",
+      "images": {
+        "image1": "static/media/icaew21.62af0af3040cde2150aa.jpg",
+        "image2": "static/media/icaew22.92ff88d1482c70a06a09.jpg",
+        "image3": "static/media/icaew23.d6404de34397844cba81.jpg"
+      },
+      "other": {
+        "dates": "April 2019 - December 2020. 1 year 9 months",
+        "link": {
+          "text": "ICAEW",
+          "url": "https://www.icaew.com/"
+        },
+        "link2": {
+          "text": "UX ICAEW",
+          "url": "https://ux.icaew.com/index.html"
+        },
+        "location": "Remote / Milton Keynes"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>My task was to upgrade the current website to the latest version of the Foundation Framework. As part of this the Design team were redesigning the website from the ground up and my role was to support that process and development.</p></div>",
+      "tech": {
+        "bootstrap": false,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": true,
+        "git": true,
+        "github": true,
+        "grunt": false,
+        "gulp": true,
+        "handlebars": true,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseMerchantcantos": [
+    {
+      "client": "Merchant cantos",
+      "detailed": "<div><p>Creation and updates to end of year reports and accounts for a number of top brands. Skills used included standard HTML markup alongside CSS (SASS), TFS was the chosen source control system.</p></div>",
+      "images": {
+        "image1": "static/media/merchantcantos1.81c968a9284513c65863.jpg",
+        "image2": "static/media/merchantcantos2.a9528b72e34e629090cd.jpg",
+        "image3": "static/media/merchantcantos3.2af2361513c6d8f5780b.jpg"
+      },
+      "other": {
+        "dates": "February 2019 - March 2019. 2 months",
+        "link": {
+          "text": "Merchantcantos",
+          "url": "https://www.merchantcantos.com/"
+        },
+        "location": "London"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>Creation and updates to end of year reports and accounts for a number of top brands. Skills used included standard HTML markup alongside CSS (SASS), TFS was the chosen source control system.</p></div>",
+      "tech": {
+        "bootstrap": false,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": true,
+        "github": true,
+        "grunt": false,
+        "gulp": false,
+        "handlebars": false,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseStadion": [
+    {
+      "client": "Stadion",
+      "detailed": "<div><p>My role was to create the markup and styles for new modules supporting existing pages and newer ones. We used Handlebars for markup templating and SCSS for CSS pre processing. A number of components/modules required JS to be written or updated with a mix of vanilla JS and jQuery being used.</p><p>I also helped to implement a huge tracking plan across pages and specific modules to hook into Google Analytics Datalayer, allowing the team to track when promotions were seen, cards were clicked, buttons were used etc.</p></div>",
+      "images": {
+        "image1": "static/media/stadionHomepageTop.064e83b642bddd8dba89.jpg",
+        "image2": "static/media/stadionHomepageBottom.7c3c38a144709b3bfcd3.jpg",
+        "image3": "static/media/stadionDynamicContentWidget.236414f8a35828646838.jpg"
+      },
+      "other": {
+        "dates": "May 2022 - August 2022. 4 months",
+        "link": {
+          "text": "Stadion",
+          "url": "https://www.stadion.io/"
+        },
+        "location": "Remote"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>Updated existing modules and components as well as creating brand new ones to use across the Paris Saint-Germain F.C. website, alongside this fixing bugs and also implemented a site wide custom Google Tracking plan.</p></div>",
+      "tech": {
+        "bootstrap": false,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": true,
+        "github": true,
+        "grunt": false,
+        "gulp": true,
+        "handlebars": true,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseValtech": [
+    {
+      "client": "Valtech",
+      "detailed": "<div><p>Initially tasked with updating the existing Product Purchase journey to improve the user experience throughout alongside usual bug fixing and enhancements, this aspect grew larger and larger as more work was completed, the underlying code, logic etc was incredibly complex having to adjust specific aspects depending on language, region, type or type of user. Following this I helped worked on a reskin of the overall website to try and bring up to date with latest brand guidelines, this meant having to work with much older code in places which had its own complexities to get around.</p><p>My final project was as part of a small team to add Login functionality to a brand site and then build the requisite components needed for when the user has logged in, show products purchased, address details etc.</p></div>",
+      "images": {
+        "image1": "static/media/valtech-gn-product-list-page.f8062fa0cb19d8c43535.jpg",
+        "image2": "static/media/valtech-gn-product-page.10a56737399c05dbfc27.jpg",
+        "image3": "static/media/valtech-gn-beltone.e32a59547a4c5380dc78.jpg"
+      },
+      "other": {
+        "dates": "September 2022 - January 2024. 18 months",
+        "link": {
+          "text": "Valtech",
+          "url": "https://www.valtech.com/en-dk/"
+        },
+        "location": "Remote / Denmark"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>Whilst working with one of Valtech's clients my role as a Front End Web Developer within multiple teams, across multiple regions was to reskin their existing website using the latest brand guidelines. I also worked on huge user experience changes throughout the Product Purchase journey as well as adding new components and functionality to existing sites.</p></div>",
+      "tech": {
+        "bootstrap": true,
+        "docker": false,
+        "drupal": false,
+        "firebase": false,
+        "foundation": false,
+        "git": true,
+        "github": true,
+        "grunt": false,
+        "gulp": true,
+        "handlebars": true,
+        "react": false
+      }
+    }
+  ],
+  "DataCaseVersantus": [
+    {
+      "client": "Versantus",
+      "detailed": "<div><p>I was brought into the team following the departure of another Front End Developer, this meant I was working across a number of different projects, some recently built using the latest techniques and latest version of Drupal. Other projects were a little out of date which meant having to be careful with the fixes and the code I was putting in place. This also meant having to work with a large number of people in a short space of time as each project had its own Front End Developer, a Drupal Developer, a different Project Manager etc.</p><p>I always made sure to test my work across multiple browser and devices and due to the short nature of the contract to add comments to any work I did for future developers to pick up and continue with.</p><p>This role was different to any I had done before because as a Front End Developer I had to have a locally running version of the back end Drupal setup in order to write my code, this meant a lot of setup was required for each project (Docker) but also meant there was no need for an integration stage for the Back End Developers who had been given a load of Front End code.</p></div>",
+      "images": {
+        "image1": "static/media/versantus.4cd9af63011ca70c1965.jpg",
+        "image2": "static/media/versantusAudleyvillages.d25992d9604310a208a8.jpg",
+        "image3": "static/media/versantusAllegracare.ea4f106a6560f52f574d.jpg"
+      },
+      "other": {
+        "dates": "August 2021 - September 2021. 2 months",
+        "link": {
+          "text": "Versantus",
+          "url": "https://www.versantus.co.uk/"
+        },
+        "location": "Remote"
+      },
+      "role": "Front End Developer",
+      "summary": "<div><p>Worked across a number of the agency's client websites built using Drupal, developing new components and modules to be used by clients with HTML, CSS and JS as well as refactoring or fixing older code, ensuring better coding and accessibility standards along the way.</p></div>",
+      "tech": {
+        "bootstrap": false,
+        "docker": true,
+        "drupal": true,
+        "firebase": false,
+        "foundation": false,
+        "git": true,
+        "github": true,
+        "grunt": false,
+        "gulp": false,
+        "handlebars": false,
+        "react": false
+      }
+    }
+  ]
+}

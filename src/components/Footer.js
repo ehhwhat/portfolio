@@ -30,7 +30,7 @@ class Footer extends Component {
                     </ul>
                     <ul className="list-inline my-0">
                         <li className="list-inline-item">
-                            <i className="bi bi-info-square-fill text-warning"></i> Last update: Added cases all using state change for cases
+                            <i className="bi bi-info-square-fill text-warning"></i> Last update: Added Valtech case study
                         </li>
                     </ul>
                 </div>

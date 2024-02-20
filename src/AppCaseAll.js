@@ -9,6 +9,7 @@ import FireBaseCases from './components/firebaseCases';
 import {onValue, ref} from "firebase/database";
 import ImageButton from "./components/ImageButton";
 // Logos
+import ImgValtechLogo from './assets/img/clients/valtech/valtechLogo.png';
 import ImgStadionLogo from './assets/img/clients/stadion/stadionLogo2.svg';
 import ImgEngineLogo from './assets/img/clients/engine/engineLogo.svg';
 import ImgVersantusLogo from './assets/img/clients/versantus/versantusLogo.svg';
@@ -39,7 +40,7 @@ class AppCaseAll extends Component {
     componentDidMount() {
         onValue(ref(FireBaseCases, '/'), (snapshot) => {
             const data = snapshot.val();
-            this.setState({dataCurrent: data['DataCaseStadion'][0]});
+            this.setState({dataCurrent: data['DataCaseValtech'][0]});
         }, error => {
 
         });
@@ -89,6 +90,11 @@ class AppCaseAll extends Component {
                 <main className={'bg-light'}>
                     <div className={'container'}>
                         <div className={'image-button-wrapper'}>
+                            <ImageButton src={ImgValtechLogo}
+                                         alt={'Valtech Logo'}
+                                         onClick={this.handleClick('DataCaseValtech')}
+                                         activeState={`${this.state.activeLink === 'DataCaseValtech' ? 'image-button--active' : ''}`} >
+                            </ImageButton>
                             <ImageButton src={ImgStadionLogo}
                                          alt={'Stadion Logo'}
                                          onClick={this.handleClick('DataCaseStadion')}

@@ -87,6 +87,7 @@ class App extends Component {
                                 <p><strong>Direct links</strong></p>
                                 <ul className="">
                                     <li><NavLink to="/AppCaseAll">All</NavLink></li>
+                                    <li><NavLink to="/AppCaseValtech">Valtech</NavLink></li>
                                     <li><NavLink to="/AppCaseStadion">Stadion</NavLink></li>
                                     <li><NavLink to="/AppCaseEngine">Engine UK</NavLink></li>
                                     <li><NavLink to="/AppCaseVersantus">Versantus</NavLink></li>
@@ -96,7 +97,8 @@ class App extends Component {
                                     <li><NavLink to="/AppCaseCashplus">Cashplus</NavLink></li>
                                     <li><NavLink to="/AppCaseHomeserveUSA">Homeserve USA</NavLink></li>
                                     <li><NavLink to="/AppCaseHomeserve">Homeserve</NavLink></li>
-                                </ul></div>}
+                                </ul>
+                            </div>}
                         />
                         <TextImage altLayout={true} backgroundImage={ImgLogin} heading={'Login'} subHeading={'Get more access'} id={'Login'}>
                             <FirebaseLogin />
