@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+
+$sunflower: #EDD269;
+
+.AppRSVP {
+  overflow: hidden;
+  * {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 200;
+  }
+  strong {
+    font-weight: 800;
+  }
+  .bg {
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:100vh;
+  }
+  .bg1 {
+    background:rgba($sunflower,0.66);
+  }
+  .bg-image {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0.5;
+    background-size: cover;
+    background-position-x: 25%;
+    z-index:-1;
+  }
+  .hero {
+    width:90%;
+    margin:0 auto -2rem;
+    position: relative;
+    z-index: 0;
+    &__image {
+      max-width:100%;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+  }
+  h1 {
+    text-align: center;
+    color:darken($sunflower ,75%);
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .divider {
+    text-align: center;
+    img {
+      width:24px;
+      opacity: 0.25;
+      margin: 0 1rem;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
