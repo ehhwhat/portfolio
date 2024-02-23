@@ -17,12 +17,6 @@ function AppRSVP() {
 
                             <h1 className={'mb-5 font--handwriting'}>Georgina and Benjamin's Wedding Party</h1>
 
-                            {/*
-                            <div className="hero">
-                                <img src={ImageEngagement} className='hero__image shadow-5 rounded' alt=""/>
-                            </div>
-                            */}
-
                             <div className="card mb-5 p-5">
                                 <div className="card-body">
                                     <h5 className="card-title">Details</h5>
