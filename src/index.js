@@ -27,6 +27,8 @@ import AppDemo from './AppDemo';
 import AppDemoStateAndProps from './AppDemoStateAndProps';
 import AppDemoClickEvents from './AppDemoClickEvents';
 import AppBabyTracker from './AppBabyTracker';
+import AppRSVP from './AppRSVP';
+import AppRSVP2 from './AppRSVP2';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
@@ -65,6 +67,8 @@ ReactDOM.render(
               <Route path="/AppDemoStateAndProps" element={<AppDemoStateAndProps />} />
               <Route path="/AppDemoClickEvents" element={<AppDemoClickEvents />} />
               <Route path="/AppBabyTracker" element={<AppBabyTracker />} />
+              <Route path="/AppRSVP" element={<AppRSVP />} />
+              <Route path="/AppRSVP2" element={<AppRSVP2 />} />
           </Routes>
           <Footer />
       </Router>
