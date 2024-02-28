@@ -1,0 +1,83 @@
+$stravaOrange: #fc5200;
+
+.AppStrava {
+  overflow: hidden;
+  * {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 200;
+  }
+  strong {
+    font-weight: 600;
+  }
+  .bg {
+    background: darken($stravaOrange,5%);
+    height:100vh;
+  }
+  &__card {
+    background:lighten($stravaOrange, 50%);
+    padding:2rem;
+    margin: 0 0 2rem 0;
+    border-radius:10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  &--meta {
+    background:darken($stravaOrange, 7%);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 16px 0px inset;
+    color:darken($stravaOrange, 28%);
+  }
+  &__data {
+    .row:nth-child(0) {
+      background: darken($stravaOrange,6%);
+    }
+    .row:nth-child(1) {
+      background: darken($stravaOrange,7%);
+    }
+    .row:nth-child(2) {
+      background: darken($stravaOrange,8%);
+    }
+    .row:nth-child(3) {
+      background: darken($stravaOrange,9%);
+    }
+    .row:nth-child(4) {
+      background: darken($stravaOrange,10%);
+    }
+  }
+
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(white 0 0);
+    background:
+            var(--c) 0%   50%,
+            var(--c) 50%  50%,
+            var(--c) 100% 50%;
+    background-size: 20% 100%;
+    animation: l1 1s infinite linear;
+    margin:0 auto;
+    opacity:0.1;
+  }
+  @keyframes l1 {
+    0%  {background-size: 20% 100%,20% 100%,20% 100%}
+    33% {background-size: 20% 10% ,20% 100%,20% 100%}
+    50% {background-size: 20% 100%,20% 10% ,20% 100%}
+    66% {background-size: 20% 100%,20% 100%,20% 10% }
+    100%{background-size: 20% 100%,20% 100%,20% 100%}
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
